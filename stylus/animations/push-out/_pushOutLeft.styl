@@ -1,0 +1,11 @@
+if $use-pushInLeft == true
+  @keyframes
+    0$
+      opacity: 0
+      transform: translateX(-200px) translateZ(100px) rotateY(-20deg)
+    100$
+      opacity: 1
+      transform: translateX(0px) translateZ(0px) rotateY(0deg)
+  .pushInLeft
+    transform-origin: right
+    animation-name: pushInLeft

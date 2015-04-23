@@ -1,0 +1,18 @@
+@if $use-pushOutUp == true {
+
+    @keyframes pushOutUp {
+        0% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(0px) translateZ(-$pp-translate-z) rotateX(-$pp-rotate);
+        }
+    }
+
+    .pushOutUp {
+        transform-origin: top center;
+        animation-name: pushOutUp;
+    }
+}

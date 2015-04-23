@@ -1,0 +1,54 @@
+/**
+ * Sass Mixins which will be used by the modules
+ * @param  {String} $property Style property
+ * @param  {String} $value... Style value
+ * @return {String}           Styles of atached vector prefixes.
+ * @example:
+ *     .fadeIn {
+ *           @include animate-prefixer(animation, 'fadeIn');
+ *     }
+ */
+/**
+ * Generate keyframes animations with vendor prefixes in one hit
+ * @param  {String} $animation-name animation name
+ * @return {String}           Styles of atached vector prefixes.
+ * @example:
+ *     .fadeIn {
+ *         @include animate-prefixer(animation, fadeIn);
+ *     }
+ *     @include animate-keyframe(fadeIn) {
+ *         0% {opacity: 0;}
+ *         100% {opacity: 1;}
+ *     }
+ */
+/**
+ * Using for the parentNode of which element you want apply 3D animation to.
+ * @class .a3d-box
+ * @emxaple:
+ *   <div class="a3d-box">
+ *       <div class="a3d pullIn"></div>
+ *   </div>
+ */
+.a3d-box {
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  -webkit-perspective: 200px;
+  -o-perspective: 200px;
+  -ms-perspective: 200px;
+  perspective: 200px;
+  -webkit-perspective-origin: center;
+  -o-perspective-origin: center;
+  -ms-perspective-origin: center;
+  perspective-origin: center; }
+
+/**
+ * enable 3D mode for animations
+ * @class .a3d
+ */
+.a3d {
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: -webkit-transform .6s;
+  transition: transform .6s; }

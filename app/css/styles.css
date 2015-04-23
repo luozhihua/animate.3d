@@ -1,0 +1,34 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body > [layout=row] {
+    height: 100%;
+}
+
+.a3d-box.demo {
+    height: 100%;
+    width: 100%;
+}
+
+.a3d.demo {
+    margin: auto;
+    width: 320px;
+    height: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.9);
+    background-color: #0BE6CE;
+}
+
+.a3d.demo img {
+    width: 100%;
+}
+
+#animationsSelector {
+    -webkit-appearance: inherit;
+    appearance: inherit;
+    padding: 16px;
+    font-size: 18px;
+}

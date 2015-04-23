@@ -1,0 +1,18 @@
+@if $use-pushInRightBig == true {
+
+    @keyframes pushInRightBig {
+        0% {
+            opacity: 0;
+            transform: translateX($pp-translate-x-big) translateZ($pp-translate-z-big) rotateY($pp-rotate);
+        }
+        100% {
+            opacity: 0.9;
+            transform: translateX(0px) translateZ(0px) rotateY(0deg);
+        }
+    }
+
+    .pushInRightBig {
+        transform-origin: right center;
+        animation-name: pushInRightBig;
+    }
+}

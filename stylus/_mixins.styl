@@ -1,0 +1,47 @@
+//Below is a list of the Sass rules that could not be converted to Stylus
+//quote: line 12 in your Sass file
+//quote: line 13 in your Sass file
+//quote: line 14 in your Sass file
+//quote: line 15 in your Sass file
+
+
+/// Sass Mixins which will be used by the modules
+/// @funtion
+/// @name
+/// @param   {String} $property Style property
+/// @param   {String} $value... Style value
+/// @returns {String}           Styles of atached vector prefixes.
+/// @example:
+///     .fadeIn {
+///           @include animate-prefixer(animation, 'fadeIn');
+///     }
+a3d-prefixer($property)
+  //Function quote is not supported in Stylus
+  //-webkit-#<Sass::Script::Tree::Interpolation:0x007fa4a113e690>: unquote({$value})
+  //Function quote is not supported in Stylus
+  //-moz-#<Sass::Script::Tree::Interpolation:0x007fa4a113c1d8>: unquote({$value})
+  //Function quote is not supported in Stylus
+  //-o-#<Sass::Script::Tree::Interpolation:0x007fa4a1137020>: unquote({$value})
+  //Function quote is not supported in Stylus
+  //{(interpolation nil $property nil)}: unquote({$value})
+/// Generate keyframes animations with vendor prefixes in one hit
+/// @param   {String} $animation-name animation name
+/// @returns {String}           Styles of atached vector prefixes.
+/// @example:
+///     .fadeIn {
+///         @include animate-prefixer(animation, fadeIn);
+///     }
+///     @include animate-keyframe(fadeIn) {
+///         0% {opacity: 0;}
+///         100% {opacity: 1;}
+///     }
+///
+a3d-keyframe($animation-name)
+  @-webkit-keyframes
+    {block}
+  @-moz-keyframes
+    {block}
+  @-o-keyframes
+    {block}
+  @keyframes
+    {block}

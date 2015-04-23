@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Animate.3d</title>
+<meta name="description" content="A very cool animation library of CSS 3.0">
+<meta name="keywords" content="Animate.3d">
+<link href="css/animate.3d.css" rel="stylesheet">
+<link href="css/flex.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body onload="initSelect()">
+
+    <div layout="row" layout-align="center center">
+        <div flex="50">
+            <div class="a3d-box demo">
+                <div id="previewPanel" class="a3d demo pushIn">
+                    <!-- <img src="img/mountain.jpg"> -->
+                </div>
+            </div>
+        </div>
+        <div flex="50">
+            <div class="toolbar">
+                <select name="" id="animationsSelector">
+
+                    <optgroup label="Push In">
+                        <option value="pushIn">normal</option>
+                        <option value="pushInDown">in-down</option>
+                        <option value="pushInUp">in-up</option>
+                        <option value="pushInLeft">in-left</option>
+                        <option value="pushInRight">in-right</option>
+                        <option value="pushInDownBig">in-down-big</option>
+                        <option value="pushInUpBig">in-up-big</option>
+                        <option value="pushInLeftBig">in-left-big</option>
+                        <option value="pushInRightBig">in-right-big</option>
+                    </optgroup>
+
+                    <optgroup label="Push Out">
+                        <option value="pushOut">normal</option>
+                        <option value="pushOutDown">out-down</option>
+                        <option value="pushOutUp">out-up</option>
+                        <option value="pushOutLeft">out-left</option>
+                        <option value="pushOutRight">out-right</option>
+                        <option value="pushOutDownBig">out-down-big</option>
+                        <option value="pushOutUpBig">out-up-big</option>
+                        <option value="pushOutLeftBig">out-left-big</option>
+                        <option value="pushOutRightBig">out-right-big</option>
+                    </optgroup>
+                </select>
+                <button onclick="animateIt()">Animate</button>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+    function initSelect() {
+        var selector = document.querySelector('#animationsSelector');
+        var panel = document.querySelector('#previewPanel');
+
+        selector.addEventListener('change', function() {
+            panel.className = ['a3d', 'demo', this.value].join(' ');
+        });
+    }
+
+    function animateIt() {
+        var selector = document.querySelector('#animationsSelector');
+        var panel = document.querySelector('#previewPanel');
+        panel.className = ['a3d', 'demo'];
+
+        setTimeout(function(){
+            panel.className = ['a3d', 'demo', selector.value].join(' ');
+        }, 100);
+    }
+
+</script>
+</body>
+</html>

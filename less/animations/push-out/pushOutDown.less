@@ -1,0 +1,18 @@
+& when @use-pushInDown = true {
+
+    @keyframes pushInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-100px) translateZ(40px) rotateX(20deg);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+    }
+
+    .pushInDown {
+        transform-origin: top;
+        animation-name: pushInDown;
+    }
+}

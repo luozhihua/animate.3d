@@ -1,0 +1,15 @@
+{
+  "directory": "libs",
+  "strict-ssl": false,
+  "interactive": true,
+  "registry": {
+    "__search":[
+        "http://bower.21tb.com",
+        "https://bower.herokuapp.com"
+    ],
+    "__register": "http://bower.21tb.com",
+    "__publish": "http://bower.21tb.com"
+  },
+  "scripts": {
+  }
+}
