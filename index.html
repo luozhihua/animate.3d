@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Animate.3d by luozhihua</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Animate.3d</h1>
+      <h2 class="project-tagline">A cool library of CSS 3D animations.</h2>
+      <a href="https://github.com/luozhihua/animate.3d" class="btn">View on GitHub</a>
+      <a href="https://github.com/luozhihua/animate.3d/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/luozhihua/animate.3d/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="about" class="anchor" href="#about" aria-hidden="true"><span class="octicon octicon-link"></span></a>About</h1>
+
+<p>A cool library of CSS 3D animations.</p>
+
+<h1>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h1>
+
+<p>Setp 1. <em>install with Bower:</em></p>
+
+<div class="highlight highlight-shell"><pre>bower install animate.3d --save</pre></div>
+
+<p>Setp 2. <em>import animate.3d.css to your app page:</em></p>
+
+<div class="highlight highlight-shell"><pre>    <span class="pl-k">&lt;</span>link href=<span class="pl-s"><span class="pl-pds">"</span>bower_components/dist/animate.3d.css<span class="pl-pds">"</span></span> rel=<span class="pl-s"><span class="pl-pds">"</span>stylesheet<span class="pl-pds">"</span></span><span class="pl-k">&gt;</span></pre></div>
+
+<p>Setp 3. <em>Add css class of animate.3d.css to element:</em></p>
+
+<div class="highlight highlight-html"><pre><span class="pl-c">&lt;!-- Should add a class ".a3d-box" to the parentNode of elements which using 3D animations --&gt;</span>
+&lt;<span class="pl-ent">div</span> <span class="pl-e">id</span>=<span class="pl-s"><span class="pl-pds">"</span>animate-3d-wrapper<span class="pl-pds">"</span></span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>a3d-box<span class="pl-pds">"</span></span>&gt;
+    <span class="pl-c">&lt;!-- add class ".a3d" to enable 3D animations and '.pullInUp' is the animation type.    --&gt;</span>
+    &lt;<span class="pl-ent">div</span> <span class="pl-e">class</span>=<span class="pl-s"><span class="pl-pds">"</span>a3d pullInUp<span class="pl-pds">"</span></span>&gt;
+        Animate.3d
+    &lt;/<span class="pl-ent">div</span>&gt;
+&lt;/<span class="pl-ent">div</span>&gt;</pre></div>
+
+<h1>
+<a id="using-scsslessstylus" class="anchor" href="#using-scsslessstylus" aria-hidden="true"><span class="octicon octicon-link"></span></a>Using scss/less/stylus?</h1>
+
+<p>Animate.3D provide official SCSS / LESS / Stylus version, please select the appropriate for your version.</p>
+
+<ul>
+<li>SCSS main file: <code>./scss/animate.3d.scss</code>
+</li>
+<li>LESS main file: <code>./less/animate.3d.less</code>
+</li>
+<li>Stylus main file: <code>./stylus/animate.3d.styl</code>
+</li>
+</ul>
+
+<h1>
+<a id="supported-animateions" class="anchor" href="#supported-animateions" aria-hidden="true"><span class="octicon octicon-link"></span></a>Supported Animateions</h1>
+
+<ul>
+<li>
+<p>Push enter effects</p>
+
+<ul>
+<li>[x] pushIn</li>
+<li>[x] pushInUp</li>
+<li>[x] pushInDown</li>
+<li>[x] pushInLeft</li>
+<li>[x] pushInRight</li>
+<li>[x] pushInUpBig</li>
+<li>[x] pushInDownBig</li>
+<li>[x] pushInLeftBig</li>
+<li>[x] pushInRightBig</li>
+</ul>
+</li>
+<li>
+<p>Push out effects</p>
+
+<ul>
+<li>[x] pushOut</li>
+<li>[x] pushOutUp</li>
+<li>[x] pushOutDown</li>
+<li>[x] pushOutLeft</li>
+<li>[x] pushOutRight</li>
+<li>[x] pushOutUpBig</li>
+<li>[x] pushOutDownBig</li>
+<li>[x] pushOutLeftBig</li>
+<li>[x] pushOutRightBig</li>
+</ul>
+</li>
+<li>
+<p>Pull Enter effects</p>
+
+<ul>
+<li>[ ] pullIn;</li>
+<li>[ ] pullInUp;</li>
+<li>[ ] pullInDown;</li>
+<li>[ ] pullInLeft;</li>
+<li>[ ] pullInRight;</li>
+<li>[ ] pullInUpBig;</li>
+<li>[ ] pullInDownBig;</li>
+<li>[ ] pullInLeftBig;</li>
+<li>[ ] pullInRightBig;</li>
+</ul>
+</li>
+<li>
+<p>Pull Out effects</p>
+
+<ul>
+<li>[ ] pullOut;</li>
+<li>[ ] pullOutUp;</li>
+<li>[ ] pullOutDown;</li>
+<li>[ ] pullOutLeft;</li>
+<li>[ ] pullOutRight;</li>
+<li>[ ] pullOutUpBig;</li>
+<li>[ ] pullOutDownBig;</li>
+<li>[ ] pullOutLeftBig;</li>
+<li>[ ] pullOutRightBig;</li>
+</ul>
+</li>
+</ul>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/luozhihua/animate.3d">Animate.3d</a> is maintained by <a href="https://github.com/luozhihua">luozhihua</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62226242-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
+  </body>
+</html>
+
