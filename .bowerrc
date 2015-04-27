@@ -3,12 +3,12 @@
   "strict-ssl": false,
   "interactive": true,
   "registry": {
-    "__search":[
+    "s__search":[
         "http://bower.21tb.com",
         "https://bower.herokuapp.com"
     ],
-    "__register": "http://bower.21tb.com",
-    "__publish": "http://bower.21tb.com"
+    "s__register": "http://bower.21tb.com",
+    "s__publish": "http://bower.21tb.com"
   },
   "scripts": {
   }

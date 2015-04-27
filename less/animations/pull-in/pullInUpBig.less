@@ -1,0 +1,18 @@
+& when (@use-pullInUpBig = true) {
+
+    @keyframes pullInUpBig {
+        0% {
+            opacity: 0;
+            transform: translateY(@pp-translate-y-big) translateZ(-@pp-translate-z-big) rotateX(@pp-rotate-big);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+    }
+
+    .pullInUpBig {
+        transform-origin: top center;
+        animation-name: pullInUpBig;
+    }
+}

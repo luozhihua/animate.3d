@@ -1,0 +1,11 @@
+if $use-pushOutDownBig == true
+  @keyframes
+    0$
+      opacity: 1
+      transform: translateY(0px) translateZ(0px) rotateX(0deg)
+    100$
+      opacity: 0
+      transform: translateY($pp-translate-y-big) translateZ(-$pp-translate-z-big) rotateX($pp-rotate-big)
+  .pushOutDownBig
+    transform-origin: bottom center
+    animation-name: pushOutDownBig

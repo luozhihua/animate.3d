@@ -1,0 +1,22 @@
+@if ($use-helicopterOutFront == true) {
+
+    @keyframes helicopterOutFront {
+        0% {
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(-20px) rotateX(90deg) scaleY(0.5);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(100px) translateZ(-1000px) rotateX(90deg);
+        }
+    }
+
+    .helicopterOutFront {
+        transform-origin: top center;
+        animation-name: helicopterOutFront;
+        animation-timing-function: ease-in-out;
+    }
+}

@@ -1,4 +1,4 @@
-@if $use-pushOutDown == true {
+@if ($use-pushOutDown == true) {
 
     @keyframes pushOutDown {
         0% {

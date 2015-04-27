@@ -4,16 +4,16 @@
 
 
 // Base module settings
-$base-duration					: 1s !default;           // used in 1-base module
-$base-origin 					: top center !default;
-$base-degrees 					: 30deg !default;        // used in lightspeed & special modules
+$base-duration                  : 1s !default;           // used in 1-base module
+$base-origin                    : top center !default;
+$base-degrees                   : 30deg !default;        // used in lightspeed & special modules
 
-$base-timing-function-in		: ease-in !default;
-$base-timing-function-out		: ease-out !default;
-$base-timing-function-in-out	: ease-in-out !default;
+$base-timing-function-in        : ease-in !default;
+$base-timing-function-out       : ease-out !default;
+$base-timing-function-in-out    : ease-in-out !default;
 
-$base-distance					: 10px !default; 		// used in fade, shake and bounce modules
-$base-distance-big				: 1000px !default;       // used in fadeBig and bounce modules
+$base-distance                  : 10px !default;        // used in fade, shake and bounce modules
+$base-distance-big              : 1000px !default;       // used in fadeBig and bounce modules
 
 // Push & Pull settings
 $pp-translate-y     : $base-distance * 5 !default;
@@ -37,7 +37,7 @@ $pp-rotate-big      : $pp-rotate * 2 !default;
 // Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
 //==================================================================================================//
 
-// Pull Enter
+// Push Enter
 $use-pushIn             :   true !default;
 $use-pushInUp           :   true !default;
 $use-pushInUpBig        :   true !default;
@@ -48,13 +48,66 @@ $use-pushInLeftBig      :   true !default;
 $use-pushInRight        :   true !default;
 $use-pushInRightBig     :   true !default;
 
+// Push out
+$use-pushOut            :   true !default;
+$use-pushOutUp          :   true !default;
+$use-pushOutUpBig       :   true !default;
+$use-pushOutDown        :   true !default;
+$use-pushOutDownBig     :   true !default;
+$use-pushOutLeft        :   true !default;
+$use-pushOutLeftBig     :   true !default;
+$use-pushOutRight       :   true !default;
+$use-pushOutRightBig    :   true !default;
+
+// Pull In
+$use-pullIn             :   true !default;
+$use-pullInUp           :   true !default;
+$use-pullInUpBig        :   true !default;
+$use-pullInDown         :   true !default;
+$use-pullInDownBig      :   true !default;
+$use-pullInLeft         :   true !default;
+$use-pullInLeftBig      :   true !default;
+$use-pullInRight        :   true !default;
+$use-pullInRightBig     :   true !default;
+
 // Pull out
-$use-pushOut 			:	true !default;
-$use-pushOutUp 			:	true !default;
-$use-pushOutUpBig 		:	true !default;
-$use-pushOutDown 		:	true !default;
-$use-pushOutDownBig 	:	true !default;
-$use-pushOutLeft 		:	true !default;
-$use-pushOutLeftBig 	:	true !default;
-$use-pushOutRight 		:	true !default;
-$use-pushOutRightBig 	:	true !default;
+$use-pullOut            :   true !default;
+$use-pullOutUp          :   true !default;
+$use-pullOutUpBig       :   true !default;
+$use-pullOutDown        :   true !default;
+$use-pullOutDownBig     :   true !default;
+$use-pullOutLeft        :   true !default;
+$use-pullOutLeftBig     :   true !default;
+$use-pullOutRight       :   true !default;
+$use-pullOutRightBig    :   true !default;
+
+// Coast in
+$use-coastInBack        :   true !default;
+$use-coastInFront       :   true !default;
+$use-coastInLeft        :   true !default;
+$use-coastInRight       :   true !default;
+
+// Coast out
+$use-coastOutBack       :   true !default;
+$use-coastOutFront      :   true !default;
+$use-coastOutLeft       :   true !default;
+$use-coastOutRight      :   true !default;
+
+// Helicopter In
+$use-helicopterInBack   :   true !default;
+$use-helicopterInFront  :   true !default;
+$use-helicopterInLeft   :   true !default;
+$use-helicopterInRight  :   true !default;
+
+// Helicopter Out
+$use-helicopterOutBack  :   true !default;
+$use-helicopterOutFront :   true !default;
+$use-helicopterOutLeft  :   true !default;
+$use-helicopterOutRight :   true !default;
+
+// Spiral In
+$use-spiralInUp         :   true !default;
+$use-spiralInDown       :   true !default;
+$use-spiralInLeft       :   true !default;
+$use-spiralInRight      :   true !default;
+

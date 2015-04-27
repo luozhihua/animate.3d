@@ -15,10 +15,14 @@ $base-distance = 10px
 $base-distance-big = 1000px
 // used in fadeBig and bounce modules
 // Push & Pull settings
-$pp-translate-y = 100px
+$pp-translate-y = $base-distance * 5
+$pp-translate-y-big = $pp-translate-y * 3
 $pp-translate-x = $pp-translate-y
-$pp-translate-z = 40px
-$pp-rotate = 20deg
+$pp-translate-x-big = $pp-translate-x * 10
+$pp-translate-z = $base-distance * 4
+$pp-translate-z-big = $pp-translate-z * 3
+$pp-rotate = 10deg
+$pp-rotate-big = $pp-rotate * 2
 //==================================================================================================//
 // Module loading                                                                                   //
 //==================================================================================================//
@@ -29,7 +33,7 @@ $pp-rotate = 20deg
 //==================================================================================================//
 // Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
 //==================================================================================================//
-// Pull Enter
+// Push Enter
 $use-pushIn = true
 $use-pushInUp = true
 $use-pushInUpBig = true
@@ -39,7 +43,7 @@ $use-pushInLeft = true
 $use-pushInLeftBig = true
 $use-pushInRight = true
 $use-pushInRightBig = true
-// Pull out
+// Push out
 $use-pushOut = true
 $use-pushOutUp = true
 $use-pushOutUpBig = true
@@ -49,3 +53,48 @@ $use-pushOutLeft = true
 $use-pushOutLeftBig = true
 $use-pushOutRight = true
 $use-pushOutRightBig = true
+// Pull In
+$use-pullIn = true
+$use-pullInUp = true
+$use-pullInUpBig = true
+$use-pullInDown = true
+$use-pullInDownBig = true
+$use-pullInLeft = true
+$use-pullInLeftBig = true
+$use-pullInRight = true
+$use-pullInRightBig = true
+// Pull out
+$use-pullOut = true
+$use-pullOutUp = true
+$use-pullOutUpBig = true
+$use-pullOutDown = true
+$use-pullOutDownBig = true
+$use-pullOutLeft = true
+$use-pullOutLeftBig = true
+$use-pullOutRight = true
+$use-pullOutRightBig = true
+// Coast in
+$use-coastInBack = true
+$use-coastInFront = true
+$use-coastInLeft = true
+$use-coastInRight = true
+// Coast out
+$use-coastOutBack = true
+$use-coastOutFront = true
+$use-coastOutLeft = true
+$use-coastOutRight = true
+// Helicopter In
+$use-helicopterInBack = true
+$use-helicopterInFront = true
+$use-helicopterInLeft = true
+$use-helicopterInRight = true
+// Helicopter Out
+$use-helicopterOutBack = true
+$use-helicopterOutFront = true
+$use-helicopterOutLeft = true
+$use-helicopterOutRight = true
+// Spiral In
+$use-spiralInUp = true
+$use-spiralInDown = true
+$use-spiralInLeft = true
+$use-spiralInRight = true

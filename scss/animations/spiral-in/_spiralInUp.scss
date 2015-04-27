@@ -1,0 +1,21 @@
+@if ($use-spiralInUp == true) {
+
+    @keyframes spiralInUp {
+        0% {
+            opacity: 0;
+            transform: translateY(40px) translateZ(100px) rotateY(190deg) scaleX(1);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(10px) translateZ(50px) rotateY(45deg) scaleX(0.4);
+        }
+        100% {
+            transform: translateY(0px) translateZ(0px) rotateY(0deg);
+        }
+    }
+
+    .spiralInUp {
+        transform-origin: top center;
+        animation-name: spiralInUp;
+    }
+}

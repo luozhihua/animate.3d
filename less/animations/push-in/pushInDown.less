@@ -1,9 +1,9 @@
-& when @use-pushInDown = true {
+& when (@use-pushInDown = true) {
 
     @keyframes pushInDown {
         0% {
             opacity: 0;
-            transform: translateY(0-@pp-translate-y) translateZ(@pp-translate-z) rotateX(@pp-rotate);
+            transform: translateY(- @pp-translate-y) translateZ(@pp-translate-z) rotateX(@pp-rotate);
         }
         100% {
             opacity: 1;
@@ -12,7 +12,7 @@
     }
 
     .pushInDown {
-        transform-origin: top;
+        transform-origin: top center;
         animation-name: pushInDown;
     }
 }

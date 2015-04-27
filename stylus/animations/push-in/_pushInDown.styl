@@ -2,10 +2,10 @@ if $use-pushInDown == true
   @keyframes
     0$
       opacity: 0
-      transform: translateY(0 - $pp-translate-y) translateZ($pp-translate-z) rotateX($pp-rotate)
+      transform: translateY(-$pp-translate-y) translateZ($pp-translate-z) rotateX($pp-rotate)
     100$
       opacity: 1
       transform: translateY(0px) translateZ(0px) rotateX(0deg)
   .pushInDown
-    transform-origin: top
+    transform-origin: top center
     animation-name: pushInDown

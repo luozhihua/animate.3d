@@ -24,8 +24,67 @@
             <div class="toolbar">
                 <select name="" id="animationsSelector">
 
+                    <optgroup label="Spiral In">
+                        <option value="spiralInUp">In-Front</option>
+                        <option value="spiralInDown">In-Back</option>
+                        <option value="spiralInLeft">In-left</option>
+                        <option value="spiralInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Helicopter Out">
+                        <option value="helicopterOutFront">Out-Front</option>
+                        <option value="helicopterOutBack">Out-Back</option>
+                        <option value="helicopterOutLeft">Out-left</option>
+                        <option value="helicopterOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Helicopter In">
+                        <option value="helicopterInFront">In-Front</option>
+                        <option value="helicopterInBack">In-Back</option>
+                        <option value="helicopterInLeft">In-left</option>
+                        <option value="helicopterInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Coast Out">
+                        <option value="coastOutFront">Out-Front</option>
+                        <option value="coastOutBack">Out-Back</option>
+                        <option value="coastOutLeft">Out-left</option>
+                        <option value="coastOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Coast In">
+                        <option value="coastInFront">In-Front</option>
+                        <option value="coastInBack">In-Back</option>
+                        <option value="coastInLeft">In-left</option>
+                        <option value="coastInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Pull Out">
+                        <option value="pullOut">Pull Out</option>
+                        <option value="pullOutDown">Out-down</option>
+                        <option value="pullOutUp">Out-up</option>
+                        <option value="pullOutLeft">Out-left</option>
+                        <option value="pullOutRight">Out-right</option>
+                        <option value="pullOutDownBig">Out-down-big</option>
+                        <option value="pullOutUpBig">Out-up-big</option>
+                        <option value="pullOutLeftBig">Out-left-big</option>
+                        <option value="pullOutRightBig">Out-right-big</option>
+                    </optgroup>
+
+                    <optgroup label="Pull In">
+                        <option value="pullIn">Pull In</option>
+                        <option value="pullInDown">in-down</option>
+                        <option value="pullInUp">in-up</option>
+                        <option value="pullInLeft">in-left</option>
+                        <option value="pullInRight">in-right</option>
+                        <option value="pullInDownBig">in-down-big</option>
+                        <option value="pullInUpBig">in-up-big</option>
+                        <option value="pullInLeftBig">in-left-big</option>
+                        <option value="pullInRightBig">in-right-big</option>
+                    </optgroup>
+
                     <optgroup label="Push In">
-                        <option value="pushIn">normal</option>
+                        <option value="pushIn">Push In</option>
                         <option value="pushInDown">in-down</option>
                         <option value="pushInUp">in-up</option>
                         <option value="pushInLeft">in-left</option>
@@ -37,7 +96,7 @@
                     </optgroup>
 
                     <optgroup label="Push Out">
-                        <option value="pushOut">normal</option>
+                        <option value="pushOut">Push Out</option>
                         <option value="pushOutDown">out-down</option>
                         <option value="pushOutUp">out-up</option>
                         <option value="pushOutLeft">out-left</option>
@@ -48,7 +107,7 @@
                         <option value="pushOutRightBig">out-right-big</option>
                     </optgroup>
                 </select>
-                <button onclick="animateIt()">Animate</button>
+                <button id="animate-it" onclick="animateIt()">Animate</button>
             </div>
         </div>
     </div>

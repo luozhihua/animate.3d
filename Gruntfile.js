@@ -74,6 +74,17 @@ module.exports = function (grunt) {
       ]
     },
 
+    clean: {
+      less: [
+        './less'
+      ],
+      stylus: [
+        './stylus'
+      ],
+      dist: [
+        './dist'
+      ]
+    },
 
     wiredep: {
       app: {
@@ -126,6 +137,34 @@ module.exports = function (grunt) {
       },
     },
 
+    // compile stylus to css
+    stylus: {
+      compile: {
+        options: {
+          //paths: ['path/to/import', 'another/to/import'],
+          urlfunc: 'embedurl', // use embedurl('test.png') in our code to trigger Data URI embedding
+          import: [      //  @import 'foo', 'bar/moo', etc. into every .styl file
+            'foo',       //  that is compiled. These might be findable based on values you gave
+            'bar/moo'    //  to `paths`, or a plugin you added under `use`
+          ]
+        },
+        files: {
+          'dist/animate.3d.css': './stylus/**/*.styl',
+        }
+      }
+    },
+
+    less: {
+      development: {
+        options: {
+          paths: ['dist/css']
+        },
+        files: {
+          'dist/animate.3d.css': 'less/**/*.less'
+        }
+      }
+    },
+
     commands: {
         options: {force: false},
         scss2stylus: {
@@ -145,6 +184,7 @@ module.exports = function (grunt) {
           src: '**/*.scss',
           dest: 'less',
           ext: '.less',
+          extDot: 'last', // fixed dest filename missing .3d
           rename: function(dest, src) { return dest + '/' + src.replace('_','');}
         }]
       }
@@ -279,17 +319,53 @@ module.exports = function (grunt) {
     ]);
   });
 
+  // regist a task "build"
+  grunt.registerTask('build', 'build to css code', function (target) {
 
+    switch(target) {
+      case 'less':
+        grunt.task.run([
+          'clean:less',
+          'wiredep',
+          'scss2less',
+          'less',
+          'autoprefixer',
+          'copy'
+        ]);
+        break;
+
+      case 'stylus':
+        grunt.task.run([
+          'clean:stylus',
+          'wiredep',
+          'scss2stylus',
+          'stylus',
+          'autoprefixer',
+          'copy'
+        ]);
+        break;
+
+      default:
+        grunt.task.run([
+          'clean:dist',
+          'wiredep',
+          'scss',
+          'autoprefixer',
+          'copy'
+        ]);
+    }
+  });
+
+
+  grunt.registerTask('scss2stylus', ['commands:scss2stylus']);
+  grunt.registerTask('scss', ['sass']);
   grunt.registerTask('scssdoc', ['sassdoc']);
   grunt.registerTask('doc', ['sassdoc']);
 
   grunt.registerTask('default', [
-    'wiredep',
-    'sass',
-    'autoprefixer',
-    'copy',
+    'build:dist',
     'scss2less',
-    'commands:scss2stylus',
+    'scss2stylus',
     'cssmin'
   ]);
 };

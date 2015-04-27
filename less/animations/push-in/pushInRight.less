@@ -1,4 +1,4 @@
-& when @use-pushInRight = true {
+& when (@use-pushInRight = true) {
 
     @keyframes pushInRight {
         0% {
@@ -12,7 +12,7 @@
     }
 
     .pushInRight {
-        transform-origin: left;
+        transform-origin: right center;
         animation-name: pushInRight;
     }
 }

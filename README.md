@@ -1,10 +1,5 @@
-# animate.3d
-A cool library of CSS 3D animations.
-
-# Install with Bower
-```
-bower install
-```
+# About
+A (Beta) cool library of CSS 3D animations.
 
 # Usage
 
@@ -61,23 +56,71 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] pushOutRightBig
 
 - Pull Enter effects
-  - [ ] pullIn;
-  - [ ] pullInUp;
-  - [ ] pullInDown;
-  - [ ] pullInLeft;
-  - [ ] pullInRight;
-  - [ ] pullInUpBig;
-  - [ ] pullInDownBig;
-  - [ ] pullInLeftBig;
-  - [ ] pullInRightBig;
+  - [x] pullIn;
+  - [x] pullInUp;
+  - [x] pullInDown;
+  - [x] pullInLeft;
+  - [x] pullInRight;
+  - [x] pullInUpBig;
+  - [x] pullInDownBig;
+  - [x] pullInLeftBig;
+  - [x] pullInRightBig;
 
 - Pull Out effects
-  - [ ] pullOut;
-  - [ ] pullOutUp;
-  - [ ] pullOutDown;
-  - [ ] pullOutLeft;
-  - [ ] pullOutRight;
-  - [ ] pullOutUpBig;
-  - [ ] pullOutDownBig;
-  - [ ] pullOutLeftBig;
-  - [ ] pullOutRightBig;
+  - [x] pullOut;
+  - [x] pullOutUp;
+  - [x] pullOutDown;
+  - [x] pullOutLeft;
+  - [x] pullOutRight;
+  - [x] pullOutUpBig;
+  - [x] pullOutDownBig;
+  - [x] pullOutLeftBig;
+  - [x] pullOutRightBig;
+
+- Coast In effects
+  - [x] coastInBack;
+  - [x] coastInFront;
+  - [x] coastInLeft;
+  - [x] coastInRight;
+
+- Coast Out effects
+  - [x] coastOutBack;
+  - [x] coastOutFront;
+  - [x] coastOutLeft;
+  - [x] coastOutRight;
+
+- Helicopter In effects
+  - [x] helicopterInFrontBack;
+  - [x] helicopterInFrontFront;
+  - [x] helicopterInFrontLeft;
+  - [x] helicopterInFrontRight;
+
+- Helicopter Out effects
+  - [x] helicopterOutFrontUp;
+  - [x] helicopterOutFrontDown;
+  - [x] helicopterOutFrontLeft;
+  - [x] helicopterOutFrontRight;
+
+# Todo List
+
+- Revolve In effects
+  - [ ] revolveIn
+  - [ ] revolveInDown
+  - [ ] revolveInUp
+  - [ ] revolveInLeft
+  - [ ] revolveInRight
+  - [ ] revolveInDownBig
+  - [ ] revolveInUpBig
+  - [ ] revolveInLeftBig
+  - [ ] revolveInRightBig
+
+- Revolve Out effects
+  - [ ] revolveOut
+  - [ ] revolveOutDown
+  - [ ] revolveOutUp
+  - [ ] revolveOutLeft
+  - [ ] revolveOutRight
+  - [ ] revolveOutDownBig
+  - [ ] revolveOutUpBig
+  - [ ] revolveOutLeftBig
+  - [ ] revolveOutRightBig

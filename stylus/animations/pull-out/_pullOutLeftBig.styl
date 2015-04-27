@@ -1,0 +1,11 @@
+if $use-pullOutLeftBig == true
+  @keyframes
+    0$
+      opacity: 1
+      transform: translateX(0px) translateZ(0px) rotateY(0deg)
+    100$
+      opacity: 0
+      transform: translateX(-$pp-translate-y-big) translateZ($pp-translate-z-big) rotateY(-$pp-rotate-big)
+  .pullOutLeftBig
+    transform-origin: left center
+    animation-name: pullOutLeftBig

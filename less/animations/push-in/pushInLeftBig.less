@@ -1,9 +1,9 @@
-& when @use-pushInLeft = true {
+& when (@use-pushInLeftBig = true) {
 
-    @keyframes pushInLeft {
+    @keyframes pushInLeftBig {
         0% {
             opacity: 0;
-            transform: translateX(-@pp-translate-x/2) translateZ(@pp-translate-z) rotateY(-@pp-rotate);
+            transform: translateX(-@pp-translate-x-big) translateZ(@pp-translate-z-big) rotateY(-@pp-rotate);
         }
         100% {
             opacity: 1;
@@ -11,8 +11,8 @@
         }
     }
 
-    .pushInLeft {
-        transform-origin: right;
-        animation-name: pushInLeft;
+    .pushInLeftBig {
+        transform-origin: left center;
+        animation-name: pushInLeftBig;
     }
 }

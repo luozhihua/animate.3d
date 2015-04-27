@@ -1,0 +1,18 @@
+& when (@use-pullInDown = true) {
+
+    @keyframes pullInDown {
+        0% {
+            opacity: 0;
+            transform: translateY(-@pp-translate-y) translateZ(-@pp-translate-z) rotateX(-@pp-rotate);
+        }
+        100% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+    }
+
+    .pullInDown {
+        transform-origin: bottom center;
+        animation-name: pullInDown;
+    }
+}

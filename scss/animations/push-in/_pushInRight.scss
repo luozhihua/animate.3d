@@ -1,4 +1,4 @@
-@if $use-pushInRight == true {
+@if ($use-pushInRight == true) {
 
     @keyframes pushInRight {
         0% {
