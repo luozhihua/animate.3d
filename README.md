@@ -77,31 +77,53 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] pullOutLeftBig;
   - [x] pullOutRightBig;
 
-- Coast In effects
-  - [x] coastInBack;
-  - [x] coastInFront;
-  - [x] coastInLeft;
-  - [x] coastInRight;
+- Slide In effects
+  - [x] slideInBack;
+  - [x] slideInFront;
+  - [x] slideInLeft;
+  - [x] slideInRight;
 
-- Coast Out effects
-  - [x] coastOutBack;
-  - [x] coastOutFront;
-  - [x] coastOutLeft;
-  - [x] coastOutRight;
+- Slide Out effects
+  - [x] slideOutBack;
+  - [x] slideOutFront;
+  - [x] slideOutLeft;
+  - [x] slideOutRight;
 
-- Helicopter In effects
-  - [x] helicopterInFrontBack;
-  - [x] helicopterInFrontFront;
-  - [x] helicopterInFrontLeft;
-  - [x] helicopterInFrontRight;
+- Rise In effects
+  - [x] riseInFrontBack;
+  - [x] riseInFrontFront;
+  - [x] riseInFrontLeft;
+  - [x] riseInFrontRight;
 
-- Helicopter Out effects
-  - [x] helicopterOutFrontUp;
-  - [x] helicopterOutFrontDown;
-  - [x] helicopterOutFrontLeft;
-  - [x] helicopterOutFrontRight;
+- Rise Out effects
+  - [x] riseOutFrontUp;
+  - [x] riseOutFrontDown;
+  - [x] riseOutFrontLeft;
+  - [x] riseOutFrontRight;
 
 # Todo List
+
+- Spiral In effects
+  - [ ] spiralIn
+  - [ ] spiralInDown
+  - [ ] spiralInUp
+  - [ ] spiralInLeft
+  - [ ] spiralInRight
+  - [ ] spiralInDownBig
+  - [ ] spiralInUpBig
+  - [ ] spiralInLeftBig
+  - [ ] spiralInRightBig
+
+- Spiral Out effects
+  - [ ] spiralOut
+  - [ ] spiralOutDown
+  - [ ] spiralOutUp
+  - [ ] spiralOutLeft
+  - [ ] spiralOutRight
+  - [ ] spiralOutDownBig
+  - [ ] spiralOutUpBig
+  - [ ] spiralOutLeftBig
+  - [ ] spiralOutRightBig
 
 - Revolve In effects
   - [ ] revolveIn

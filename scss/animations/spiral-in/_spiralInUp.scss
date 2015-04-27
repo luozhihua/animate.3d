@@ -3,7 +3,7 @@
     @keyframes spiralInUp {
         0% {
             opacity: 0;
-            transform: translateY(40px) translateZ(100px) rotateY(190deg) scaleX(1);
+            transform: translateY(40px) translateZ(-10px) rotateY(40deg) rotateX(40deg);
         }
         50% {
             opacity: 1;

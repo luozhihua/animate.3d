@@ -78,25 +78,71 @@ bower install animate.3d --save
   - [x] pullOutRightBig;
 
 - 水平滑入效果
-  - [x] coastInBack;
-  - [x] coastInFront;
-  - [x] coastInLeft;
-  - [x] coastInRight;
+  - [x] slideInBack;
+  - [x] slideInFront;
+  - [x] slideInLeft;
+  - [x] slideInRight;
 
 - 水平滑出效果
-  - [x] coastOutBack;
-  - [x] coastOutFront;
-  - [x] coastOutLeft;
-  - [x] coastOutRight;
+  - [x] slideOutBack;
+  - [x] slideOutFront;
+  - [x] slideOutLeft;
+  - [x] slideOutRight;
 
 - 飘入效果
-  - [x] helicopterInFrontBack;
-  - [x] helicopterInFrontFront;
-  - [x] helicopterInFrontLeft;
-  - [x] helicopterInFrontRight;
+  - [x] riseInFrontBack;
+  - [x] riseInFrontFront;
+  - [x] riseInFrontLeft;
+  - [x] riseInFrontRight;
 
 - 飘出效果
-  - [x] helicopterOutFrontBack;
-  - [x] helicopterOutFrontFront;
-  - [x] helicopterOutFrontLeft;
-  - [x] helicopterOutFrontRight;
+  - [x] riseOutFrontBack;
+  - [x] riseOutFrontFront;
+  - [x] riseOutFrontLeft;
+  - [x] riseOutFrontRight;
+
+# 正在开发的效果
+
+- 螺旋进入效果
+  - [ ] spiralIn
+  - [ ] spiralInDown
+  - [ ] spiralInUp
+  - [ ] spiralInLeft
+  - [ ] spiralInRight
+  - [ ] spiralInDownBig
+  - [ ] spiralInUpBig
+  - [ ] spiralInLeftBig
+  - [ ] spiralInRightBig
+
+- 螺旋退场效果
+  - [ ] spiralOut
+  - [ ] spiralOutDown
+  - [ ] spiralOutUp
+  - [ ] spiralOutLeft
+  - [ ] spiralOutRight
+  - [ ] spiralOutDownBig
+  - [ ] spiralOutUpBig
+  - [ ] spiralOutLeftBig
+  - [ ] spiralOutRightBig
+
+- 自转进入、公转进入效果
+  - [ ] revolveIn
+  - [ ] revolveInDown
+  - [ ] revolveInUp
+  - [ ] revolveInLeft
+  - [ ] revolveInRight
+  - [ ] revolveInDownBig
+  - [ ] revolveInUpBig
+  - [ ] revolveInLeftBig
+  - [ ] revolveInRightBig
+
+- 自转退场、公转退场效果
+  - [ ] revolveOut
+  - [ ] revolveOutDown
+  - [ ] revolveOutUp
+  - [ ] revolveOutLeft
+  - [ ] revolveOutRight
+  - [ ] revolveOutDownBig
+  - [ ] revolveOutUpBig
+  - [ ] revolveOutLeftBig
+  - [ ] revolveOutRightBig
