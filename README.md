@@ -101,6 +101,20 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] riseOutFrontLeft;
   - [x] riseOutFrontRight;
 
+- Revolve In effects
+  - [x] revolveIn
+  - [x] revolveInDown
+  - [x] revolveInUp
+  - [x] revolveInLeft
+  - [x] revolveInRight
+
+- Revolve Out effects
+  - [x] revolveOut
+  - [x] revolveOutDown
+  - [x] revolveOutUp
+  - [x] revolveOutLeft
+  - [x] revolveOutRight
+
 # Todo List
 
 - Spiral In effects
@@ -124,25 +138,3 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [ ] spiralOutUpBig
   - [ ] spiralOutLeftBig
   - [ ] spiralOutRightBig
-
-- Revolve In effects
-  - [ ] revolveIn
-  - [ ] revolveInDown
-  - [ ] revolveInUp
-  - [ ] revolveInLeft
-  - [ ] revolveInRight
-  - [ ] revolveInDownBig
-  - [ ] revolveInUpBig
-  - [ ] revolveInLeftBig
-  - [ ] revolveInRightBig
-
-- Revolve Out effects
-  - [ ] revolveOut
-  - [ ] revolveOutDown
-  - [ ] revolveOutUp
-  - [ ] revolveOutLeft
-  - [ ] revolveOutRight
-  - [ ] revolveOutDownBig
-  - [ ] revolveOutUpBig
-  - [ ] revolveOutLeftBig
-  - [ ] revolveOutRightBig
