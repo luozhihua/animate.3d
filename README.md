@@ -123,16 +123,18 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] spreadOutLeft
   - [x] spreadOutRight
 
-# Todo List
-
 - Spiralling In effects
-  - [ ] spirallingInDownLeft
-  - [ ] spirallingInDownRight
-  - [ ] spirallingInUpLeft
-  - [ ] spirallingInUpRight
+  - [x] spirallingInDownLeft
+  - [x] spirallingInDownRight
+  - [x] spirallingInUpLeft
+  - [x] spirallingInUpRight
 
 - Spiralling Out effects
-  - [ ] spirallingOutDownLeft
-  - [ ] spirallingOutDownRight
-  - [ ] spirallingOutUpLeft
-  - [ ] spirallingOutUpRight
+  - [x] spirallingOutDownLeft
+  - [x] spirallingOutDownRight
+  - [x] spirallingOutUpLeft
+  - [x] spirallingOutUpRight
+
+# Todo List
+
+_nothing_
