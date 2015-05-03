@@ -72,7 +72,18 @@
 @import "animations/revolve-out/revolveOutLeft";
 @import "animations/revolve-out/revolveOutRight";
 
-// @import "animations/spiral-in/spiralInUp";
-// @import "animations/spiral-in/spiralInDown";
-// @import "animations/spiral-in/spiralInLeft";
-// @import "animations/spiral-in/spiralInRight";
+@import "animations/spread-in/spreadInRight";
+@import "animations/spread-in/spreadInLeft";
+
+@import "animations/spread-out/spreadOutRight";
+@import "animations/spread-out/spreadOutLeft";
+
+@import "animations/spiralling-in/spirallingInUpLeft";
+@import "animations/spiralling-in/spirallingInUpRight";
+@import "animations/spiralling-in/spirallingInDownLeft";
+@import "animations/spiralling-in/spirallingInDownRight";
+
+@import "animations/spiralling-out/spirallingOutUpLeft";
+@import "animations/spiralling-out/spirallingOutUpRight";
+@import "animations/spiralling-out/spirallingOutDownLeft";
+@import "animations/spiralling-out/spirallingOutDownRight";

@@ -15,14 +15,39 @@
     <div layout="row" layout-align="center center">
         <div flex="50">
             <div class="a3d-box demo">
-                <div id="previewPanel" class="a3d demo pushIn">
+                <div id="previewPanel" class="a3d demo spread" layout="column" layout-align="center center">
+                    <span style="font-size:64px">Demo</span>
                     <!-- <img src="img/mountain.jpg"> -->
                 </div>
             </div>
         </div>
         <div flex="50">
             <div class="toolbar">
-                <select name="" id="animationsSelector">
+                <select name="" multiple="true" id="animationsSelector">
+
+                    <optgroup label="Spiralling Out">
+                        <option value="spirallingOutDownLeft">Out-down-left</option>
+                        <option value="spirallingOutDownRight">Out-down-right</option>
+                        <option value="spirallingOutUpLeft">Out-up-left</option>
+                        <option value="spirallingOutUpRight">Out-up-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spiralling In">
+                        <option value="spirallingInDownLeft">In-down-left</option>
+                        <option value="spirallingInDownRight">In-down-right</option>
+                        <option value="spirallingInUpLeft">In-up-left</option>
+                        <option value="spirallingInUpRight">In-up-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spread Out">
+                        <option value="spreadOutLeft">Out-left</option>
+                        <option value="spreadOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spread In">
+                        <option value="spreadInLeft">In-left</option>
+                        <option value="spreadInRight">In-right</option>
+                    </optgroup>
 
                     <optgroup label="Revolve Out">
                         <option value="revolveOutDown">Out-Down</option>

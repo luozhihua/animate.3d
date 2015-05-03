@@ -2,15 +2,15 @@
 
     @keyframes riseOutFront {
         0% {
-            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+            transform:rotate3d(1,0,0,0deg) translateY(0);
         }
         50% {
             opacity: 1;
-            transform: translateY(0px) translateZ(-20px) rotateX(90deg) scaleY(0.5);
+            transform: rotate3d(1,0,0,45deg) translateY(-100%);
         }
         100% {
             opacity: 0;
-            transform: translateY(100px) translateZ(-1000px) rotateX(90deg);
+            transform: rotate3d(1,0,0,45deg) translateY(-900%);
         }
     }
 

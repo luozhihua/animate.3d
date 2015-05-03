@@ -117,9 +117,23 @@ $use-revolveOutDown  :   true !default;
 $use-revolveOutLeft  :   true !default;
 $use-revolveOutRight :   true !default;
 
-// Spiral In
-$use-spiralInUp      :   true !default;
-$use-spiralInDown    :   true !default;
-$use-spiralInLeft    :   true !default;
-$use-spiralInRight   :   true !default;
+// Spread In
+$use-spreadInLeft    :   true !default;
+$use-spreadInRight   :   true !default;
+
+// Spread Out
+$use-spreadOutLeft    :   true !default;
+$use-spreadOutRight   :   true !default;
+
+// Spiralling In
+$use-spirallingInUpLeft    :   true !default;
+$use-spirallingInUpRight   :   true !default;
+$use-spirallingInDownLeft  :   true !default;
+$use-spirallingInDownRight :   true !default;
+
+// Spiralling Out
+$use-spirallingOutUpLeft    :   true !default;
+$use-spirallingOutUpRight   :   true !default;
+$use-spirallingOutDownLeft  :   true !default;
+$use-spirallingOutDownRight :   true !default;
 

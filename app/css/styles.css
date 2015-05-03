@@ -22,11 +22,18 @@ body > [layout=row] {
     background-image:linear-gradient(45deg, #CE0B43 35%, #FF0066 35%, #E60647 80%, #CE0B43 80%);
 }
 
+
+.a3d.demo span {
+    font-size:64px;
+    color: #fff;
+}
+
 .a3d.demo img {
     width: 100%;
 }
 
 #animationsSelector {
+    height:400px;
     -webkit-appearance: inherit;
     appearance: inherit;
     padding: 16px;

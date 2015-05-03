@@ -2,12 +2,13 @@ if $use-riseInRight == true
   @keyframes
     0$
       opacity: 0
-      transform: translateX(1000px) translateZ(-100px) rotateX(90deg) scaleY(0.2)
+      transform: rotate3d(1, 0, 0, 45deg) translateY(-100%) translateX(900%)
     50$
       opacity: 1
-      transform: translateX(20px) translateZ(-20px) rotateX(90deg) scaleY(0.5)
+      transform: rotate3d(1, 0, 0, 45deg) translateY(-100%) translateX(0)
     100$
-      transform: translateY(0px) translateZ(0px) rotateX(0deg)
+      opacity: 1
+      transform: rotate3d(1, 0, 0, 0deg) translateY(0) translateX(0)
   .riseInRight
     transform-origin: top center
     animation-name: riseInRight

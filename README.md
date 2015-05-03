@@ -115,26 +115,24 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] revolveOutLeft
   - [x] revolveOutRight
 
+- Spread In effects
+  - [x] spreadInLeft
+  - [x] spreadInRight
+
+- Spread Out effects
+  - [x] spreadOutLeft
+  - [x] spreadOutRight
+
 # Todo List
 
-- Spiral In effects
-  - [ ] spiralIn
-  - [ ] spiralInDown
-  - [ ] spiralInUp
-  - [ ] spiralInLeft
-  - [ ] spiralInRight
-  - [ ] spiralInDownBig
-  - [ ] spiralInUpBig
-  - [ ] spiralInLeftBig
-  - [ ] spiralInRightBig
+- Spiralling In effects
+  - [ ] spirallingInDownLeft
+  - [ ] spirallingInDownRight
+  - [ ] spirallingInUpLeft
+  - [ ] spirallingInUpRight
 
-- Spiral Out effects
-  - [ ] spiralOut
-  - [ ] spiralOutDown
-  - [ ] spiralOutUp
-  - [ ] spiralOutLeft
-  - [ ] spiralOutRight
-  - [ ] spiralOutDownBig
-  - [ ] spiralOutUpBig
-  - [ ] spiralOutLeftBig
-  - [ ] spiralOutRightBig
+- Spiralling Out effects
+  - [ ] spirallingOutDownLeft
+  - [ ] spirallingOutDownRight
+  - [ ] spirallingOutUpLeft
+  - [ ] spirallingOutUpRight

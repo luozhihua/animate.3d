@@ -1,0 +1,28 @@
+@if ($use-spreadInRight == true) {
+
+
+    @keyframes spreadInRight {
+        0% {
+            opacity: 0;
+            transform: rotate3d(10,0,0,60deg) rotateY(180deg) translateY(0px) scaleX(0.5) scaleY(0.7);
+            transform-origin:right bottom;
+        }
+        50%,51% {
+            opacity: 1;
+            transform: rotate3d(10,0,0,60deg) rotateY(0deg) translateY(0px) scaleX(1) scaleY(0.7);
+            transform-origin:right bottom;
+        }
+        51% {
+            transform-origin:bottom;
+        }
+        100% {
+            opacity: 1;
+            transform: rotate3d(10,0,0,0deg) rotateY(0deg) translateY(0px) scaleX(1) scaleY(1);
+            transform-origin:bottom;
+        }
+    }
+
+    .spreadInRight {
+        animation-name: spreadInRight;
+    }
+}
