@@ -1,0 +1,23 @@
+@if ($use-riseInRight == true) {
+
+    @keyframes riseInRight {
+        0% {
+            opacity: 0;
+            transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(900%);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(0);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate3d(1,0,0,0deg) translateY(0) translateX(0);
+        }
+    }
+
+    .riseInRight {
+        transform-origin: top center;
+        animation-name: riseInRight;
+        animation-timing-function: ease-in-out;
+    }
+}

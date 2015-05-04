@@ -1,0 +1,25 @@
+/**
+ * Using for the parentNode of which element you want apply 3D animation to.
+ * @class .a3d-box
+ * @emxaple:
+ *   <div class="a3d-box">
+ *       <div class="a3d pullIn"></div>
+ *   </div> */
+.a3d-box
+  -ms-transform-style: preserve-3d
+  -o-transform-style: preserve-3d
+  perspective: 200px
+  perspective-origin: center
+/**
+ * enable 3D mode for animations
+ * @class .a3d */
+.a3d
+  transform-style: preserve-3d
+  transition: transform
+  animation-duration: $base-duration
+  animation-timing-function: linear
+  animation-iteration-count: 1
+  animation-fill-mode: both
+  animation-play-state: running
+.a3d.infinite
+  animation-iteration-count: infinite

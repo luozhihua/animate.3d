@@ -1,0 +1,18 @@
+& when (@use-pushInLeftBig = true) {
+
+    @keyframes pushInLeftBig {
+        0% {
+            opacity: 0;
+            transform: translateX(-@pp-translate-x-big) translateZ(@pp-translate-z-big) rotateY(-@pp-rotate);
+        }
+        100% {
+            opacity: 1;
+            transform: translateX(0px) translateZ(0px) rotateY(0deg);
+        }
+    }
+
+    .pushInLeftBig {
+        transform-origin: left center;
+        animation-name: pushInLeftBig;
+    }
+}

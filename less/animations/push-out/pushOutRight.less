@@ -1,0 +1,18 @@
+& when (@use-pushOutRight = true) {
+
+    @keyframes pushOutRight {
+        0% {
+            opacity: 1;
+            transform: translateZ(0px) rotateX(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateZ(-@pp-translate-z) rotateY(-@pp-rotate);
+        }
+    }
+
+    .pushOutRight {
+        transform-origin: right;
+        animation-name: pushOutRight;
+    }
+}

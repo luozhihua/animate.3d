@@ -1,0 +1,18 @@
+@if ($use-pullOutRightBig == true) {
+
+    @keyframes pullOutRightBig {
+        0% {
+            opacity: 1;
+            transform: translateX(0px) translateZ(0px) rotateY(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX($pp-translate-y-big) translateZ($pp-translate-z-big) rotateY($pp-rotate-big);
+        }
+    }
+
+    .pullOutRightBig {
+        transform-origin: right center;
+        animation-name: pullOutRightBig;
+    }
+}

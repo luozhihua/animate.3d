@@ -1,0 +1,11 @@
+if $use-pullInRight == true
+  @keyframes
+    0$
+      opacity: 0
+      transform: translateX($pp-translate-x) translateZ(-$pp-translate-z) rotateY(-$pp-rotate)
+    100$
+      opacity: 1
+      transform: translateX(0px) translateZ(0px) rotateY(0deg)
+  .pullInRight
+    transform-origin: right center
+    animation-name: pullInRight

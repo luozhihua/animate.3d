@@ -1,0 +1,22 @@
+@if ($use-spirallingInDownRight == true) {
+
+    @keyframes spirallingInDownRight {
+        0% {
+            opacity: 0;
+            transform: rotate3d(1,1,1,60deg) rotate(360deg) translateY(-400px);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,60deg) rotate(180deg) translateY(-200px);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,0deg) rotate(0deg)  translateY(0px);
+        }
+    }
+
+    .spirallingInDownRight {
+        transform-origin: center;
+        animation-name: spirallingInDownRight;
+    }
+}

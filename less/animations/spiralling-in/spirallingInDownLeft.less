@@ -1,0 +1,22 @@
+& when (@use-spirallingInDownLeft = true) {
+
+
+    @keyframes spirallingInDownLeft {
+        0% {
+            opacity: 0;
+            transform: rotate3d(1,1,1,-60deg) rotate(-360deg) translateZ(-200px) translateY(-400px);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,-60deg) rotate(-180deg) translateZ(-150px) translateY(-200px);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,0deg) rotate(0deg)  translateZ(0px) translateY(0px);
+        }
+    }
+
+    .spirallingInDownLeft {
+        animation-name: spirallingInDownLeft;
+    }
+}

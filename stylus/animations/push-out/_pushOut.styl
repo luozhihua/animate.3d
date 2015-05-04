@@ -1,0 +1,13 @@
+if $use-pushOut == true
+  @keyframes
+    0$
+      opacity: 1
+      transform: translateZ(0)
+    50$
+      opacity: 0.8
+      transform: translateZ(-$pp-translate-z / 2)
+    100$
+      opacity: 0
+      transform: translateZ(-$pp-translate-z)
+  .pushOut
+    a3d-prefixer(animation-name, "pushOut")

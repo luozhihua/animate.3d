@@ -1,0 +1,64 @@
+html,body {
+    height: 100%;
+    width: 100%;
+}
+
+body > [layout=row] {
+    height: 100%;
+}
+
+.a3d-box.demo {
+    height: 100%;
+    width: 100%;
+}
+
+.a3d.demo {
+    margin: auto;
+    width: 320px;
+    height: 240px;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 4px 4px 30px rgba(0,0,0,0.9);
+    background-image:linear-gradient(45deg, #CE0B43 35%, #FF0066 35%, #E60647 80%, #CE0B43 80%);
+}
+
+
+.a3d.demo span {
+    font-size:64px;
+    color: #fff;
+}
+
+.a3d.demo img {
+    width: 100%;
+}
+
+#animationsSelector {
+    height:400px;
+    -webkit-appearance: inherit;
+    appearance: inherit;
+    padding: 16px;
+    font-size: 18px;
+    background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+Cjxzdmcgd2lkdGg9IjI0IiBoZWlnaHQ9IjE2IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogPGc+CiAgPHRpdGxlPkxheWVyIDE8L3RpdGxlPgogIDxwYXRoIGlkPSJzdmdfMSIgZD0ibTEzLjIyMjYxOCwzLjg1OTYzMmwtNC43MDI3NSw1LjQwOTY4bC00LjM3NjI0OSwtNS40MDk2OCIgdHJhbnNmb3JtPSJyb3RhdGUoLTAuNzQ5MTY4NjM0NDE0NjcyOSA4LjY4MzExODgyMDE5MDQxNyw2LjU2NDQ3MjY3NTMyMzQ2OSkgIiBzdHJva2UtbGluZWNhcD0ibnVsbCIgc3Ryb2tlLWxpbmVqb2luPSJudWxsIiBzdHJva2UtZGFzaGFycmF5PSJudWxsIiBzdHJva2Utd2lkdGg9Im51bGwiIGZpbGw9IiNDMEM4QzkiLz4KICA8cGF0aCBmaWxsPSIjQzBDOEM5IiBzdHJva2Utd2lkdGg9Im51bGwiIHN0cm9rZS1kYXNoYXJyYXk9Im51bGwiIHN0cm9rZS1saW5lam9pbj0ibnVsbCIgc3Ryb2tlLWxpbmVjYXA9Im51bGwiIGlkPSJzdmdfMiIvPgogIDxwb2x5Z29uIGlkPSJzdmdfNSIgZmlsbD0iIzAwMDAwMCIvPgogIDxwb2x5Z29uIGlkPSJzdmdfNiIgZmlsbD0iIzAwMDAwMCIvPgogIDxwb2x5Z29uIGlkPSJzdmdfNyIgZmlsbD0iIzAwMDAwMCIvPgogIDxwb2x5Z29uIGlkPSJzdmdfOCIgZmlsbD0iIzAwMDAwMCIvPgogIDxwb2x5Z29uIGlkPSJzdmdfMTIiIGZpbGw9IiMwMDAwMDAiLz4KICA8cGF0aCBmaWxsPSIjMDAwMDAwIiBzdHJva2Utd2lkdGg9Im51bGwiIHN0cm9rZS1kYXNoYXJyYXk9Im51bGwiIHN0cm9rZS1saW5lam9pbj0ibnVsbCIgc3Ryb2tlLWxpbmVjYXA9Im51bGwiIGlkPSJzdmdfMTMiLz4KICA8cG9seWdvbiBpZD0ic3ZnXzE0IiBmaWxsPSIjMDAwMDAwIi8+CiAgPHBvbHlnb24gaWQ9InN2Z18xNSIgZmlsbD0iIzAwMDAwMCIvPgogPC9nPgo8L3N2Zz4=");
+    background-position: right center;
+    background-repeat: no-repeat;
+}
+#animate-it {
+    transition: 0.4s;
+    padding: 16px;
+    font-size: 18px;
+    background-color: #2DC6CF;
+    color: #fff;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+}
+#animate-it:hover {
+    background-color: #30DCE5;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.3);
+}
+#animate-it:active,
+#animate-it:focus {
+    outline: none;
+    background-color: #28B8BF;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.3), inset 1px 1px 3px rgba(0,0,0,0.1);
+}

@@ -1,0 +1,139 @@
+/////////////////////////////////////////////////////////
+// Animation Default Settings                          //
+/////////////////////////////////////////////////////////
+
+
+// Base module settings
+@base-duration                  : 1s;           // used in 1-base module
+@base-origin                    : top center;
+@base-degrees                   : 30deg;        // used in lightspeed & special modules
+
+@base-timing-function-in        : ease-in;
+@base-timing-function-out       : ease-out;
+@base-timing-function-in-out    : ease-in-out;
+
+@base-distance                  : 10px;        // used in fade, shake and bounce modules
+@base-distance-big              : 1000px;       // used in fadeBig and bounce modules
+
+// Push & Pull settings
+@pp-translate-y     : @base-distance * 5;
+@pp-translate-y-big : @pp-translate-y * 3;
+@pp-translate-x     : @pp-translate-y;
+@pp-translate-x-big : @pp-translate-x * 10;
+@pp-translate-z     : @base-distance * 4;
+@pp-translate-z-big : @pp-translate-z * 3;
+@pp-rotate          : 10deg;
+@pp-rotate-big      : @pp-rotate * 2;
+
+
+//==================================================================================================//
+// Module loading                                                                                   //
+//==================================================================================================//
+// To include an animation module in the compiled css file, simply set it's attribute below to true //
+// (all modules set to false will not be included)                                                  //
+// The idea here is to only load the animations you want to use on a per project basis              //
+// This helps keep the compiled css file at its leanest                                             //
+//==================================================================================================//
+// Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
+//==================================================================================================//
+
+// Push Enter
+@use-pushIn          :   true;
+@use-pushInUp        :   true;
+@use-pushInUpBig     :   true;
+@use-pushInDown      :   true;
+@use-pushInDownBig   :   true;
+@use-pushInLeft      :   true;
+@use-pushInLeftBig   :   true;
+@use-pushInRight     :   true;
+@use-pushInRightBig  :   true;
+
+// Push out
+@use-pushOut         :   true;
+@use-pushOutUp       :   true;
+@use-pushOutUpBig    :   true;
+@use-pushOutDown     :   true;
+@use-pushOutDownBig  :   true;
+@use-pushOutLeft     :   true;
+@use-pushOutLeftBig  :   true;
+@use-pushOutRight    :   true;
+@use-pushOutRightBig :   true;
+
+// Pull In
+@use-pullIn          :   true;
+@use-pullInUp        :   true;
+@use-pullInUpBig     :   true;
+@use-pullInDown      :   true;
+@use-pullInDownBig   :   true;
+@use-pullInLeft      :   true;
+@use-pullInLeftBig   :   true;
+@use-pullInRight     :   true;
+@use-pullInRightBig  :   true;
+
+// Pull out
+@use-pullOut         :   true;
+@use-pullOutUp       :   true;
+@use-pullOutUpBig    :   true;
+@use-pullOutDown     :   true;
+@use-pullOutDownBig  :   true;
+@use-pullOutLeft     :   true;
+@use-pullOutLeftBig  :   true;
+@use-pullOutRight    :   true;
+@use-pullOutRightBig :   true;
+
+// Slide in
+@use-slideInBack     :   true;
+@use-slideInFront    :   true;
+@use-slideInLeft     :   true;
+@use-slideInRight    :   true;
+
+// Slide out
+@use-slideOutBack    :   true;
+@use-slideOutFront   :   true;
+@use-slideOutLeft    :   true;
+@use-slideOutRight   :   true;
+
+// Rise In
+@use-riseInBack      :   true;
+@use-riseInFront     :   true;
+@use-riseInLeft      :   true;
+@use-riseInRight     :   true;
+
+// Rise Out
+@use-riseOutBack     :   true;
+@use-riseOutFront    :   true;
+@use-riseOutLeft     :   true;
+@use-riseOutRight    :   true;
+
+// Revolve In
+@use-revolveInUp     :   true;
+@use-revolveInDown   :   true;
+@use-revolveInLeft   :   true;
+@use-revolveInRight  :   true;
+
+// Revolve Out
+@use-revolveOutUp    :   true;
+@use-revolveOutDown  :   true;
+@use-revolveOutLeft  :   true;
+@use-revolveOutRight :   true;
+
+// Spread In
+@use-spreadInLeft    :   true;
+@use-spreadInRight   :   true;
+
+// Spread Out
+@use-spreadOutLeft    :   true;
+@use-spreadOutRight   :   true;
+
+// Spiralling In
+@use-spirallingInUpLeft    :   true;
+@use-spirallingInUpRight   :   true;
+@use-spirallingInDownLeft  :   true;
+@use-spirallingInDownRight :   true;
+
+// Spiralling Out
+@use-spirallingOutUpLeft    :   true;
+@use-spirallingOutUpRight   :   true;
+@use-spirallingOutDownLeft  :   true;
+@use-spirallingOutDownRight :   true;
+

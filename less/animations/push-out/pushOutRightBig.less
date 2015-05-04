@@ -1,0 +1,18 @@
+& when (@use-pushOutRightBig = true) {
+
+    @keyframes pushOutRightBig {
+        0% {
+            opacity: 1;
+            transform: translateX(0px) translateZ(0px) rotateX(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(@pp-translate-x-big) translateZ(-@pp-translate-z-big) rotateY(-@pp-rotate-big);
+        }
+    }
+
+    .pushOutRightBig {
+        transform-origin: right;
+        animation-name: pushOutRightBig;
+    }
+}

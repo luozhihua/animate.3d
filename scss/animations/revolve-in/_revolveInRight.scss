@@ -1,0 +1,18 @@
+@if ($use-revolveInRight == true) {
+
+    @keyframes revolveInRight {
+        0% {
+            opacity: 0;
+            transform: rotateY(-359deg) translateZ(200px) translateX(-400px);
+        }
+        100% {
+            opacity: 1;
+            transform: rotateY(0deg) translateZ(0px) translateX(0px);
+        }
+    }
+
+    .revolveInRight {
+        transform-origin: right;
+        animation-name: revolveInRight;
+    }
+}

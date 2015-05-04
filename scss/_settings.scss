@@ -1,0 +1,139 @@
+/////////////////////////////////////////////////////////
+// Animation Default Settings                          //
+/////////////////////////////////////////////////////////
+
+
+// Base module settings
+$base-duration                  : 1s !default;           // used in 1-base module
+$base-origin                    : top center !default;
+$base-degrees                   : 30deg !default;        // used in lightspeed & special modules
+
+$base-timing-function-in        : ease-in !default;
+$base-timing-function-out       : ease-out !default;
+$base-timing-function-in-out    : ease-in-out !default;
+
+$base-distance                  : 10px !default;        // used in fade, shake and bounce modules
+$base-distance-big              : 1000px !default;       // used in fadeBig and bounce modules
+
+// Push & Pull settings
+$pp-translate-y     : $base-distance * 5 !default;
+$pp-translate-y-big : $pp-translate-y * 3 !default;
+$pp-translate-x     : $pp-translate-y !default;
+$pp-translate-x-big : $pp-translate-x * 10 !default;
+$pp-translate-z     : $base-distance * 4 !default;
+$pp-translate-z-big : $pp-translate-z * 3 !default;
+$pp-rotate          : 10deg !default;
+$pp-rotate-big      : $pp-rotate * 2 !default;
+
+
+//==================================================================================================//
+// Module loading                                                                                   //
+//==================================================================================================//
+// To include an animation module in the compiled css file, simply set it's attribute below to true //
+// (all modules set to false will not be included)                                                  //
+// The idea here is to only load the animations you want to use on a per project basis              //
+// This helps keep the compiled css file at its leanest                                             //
+//==================================================================================================//
+// Hugely influenced and inspired by @csswizardry's inuit.css _vars.scss file                       //
+//==================================================================================================//
+
+// Push Enter
+$use-pushIn          :   true !default;
+$use-pushInUp        :   true !default;
+$use-pushInUpBig     :   true !default;
+$use-pushInDown      :   true !default;
+$use-pushInDownBig   :   true !default;
+$use-pushInLeft      :   true !default;
+$use-pushInLeftBig   :   true !default;
+$use-pushInRight     :   true !default;
+$use-pushInRightBig  :   true !default;
+
+// Push out
+$use-pushOut         :   true !default;
+$use-pushOutUp       :   true !default;
+$use-pushOutUpBig    :   true !default;
+$use-pushOutDown     :   true !default;
+$use-pushOutDownBig  :   true !default;
+$use-pushOutLeft     :   true !default;
+$use-pushOutLeftBig  :   true !default;
+$use-pushOutRight    :   true !default;
+$use-pushOutRightBig :   true !default;
+
+// Pull In
+$use-pullIn          :   true !default;
+$use-pullInUp        :   true !default;
+$use-pullInUpBig     :   true !default;
+$use-pullInDown      :   true !default;
+$use-pullInDownBig   :   true !default;
+$use-pullInLeft      :   true !default;
+$use-pullInLeftBig   :   true !default;
+$use-pullInRight     :   true !default;
+$use-pullInRightBig  :   true !default;
+
+// Pull out
+$use-pullOut         :   true !default;
+$use-pullOutUp       :   true !default;
+$use-pullOutUpBig    :   true !default;
+$use-pullOutDown     :   true !default;
+$use-pullOutDownBig  :   true !default;
+$use-pullOutLeft     :   true !default;
+$use-pullOutLeftBig  :   true !default;
+$use-pullOutRight    :   true !default;
+$use-pullOutRightBig :   true !default;
+
+// Slide in
+$use-slideInBack     :   true !default;
+$use-slideInFront    :   true !default;
+$use-slideInLeft     :   true !default;
+$use-slideInRight    :   true !default;
+
+// Slide out
+$use-slideOutBack    :   true !default;
+$use-slideOutFront   :   true !default;
+$use-slideOutLeft    :   true !default;
+$use-slideOutRight   :   true !default;
+
+// Rise In
+$use-riseInBack      :   true !default;
+$use-riseInFront     :   true !default;
+$use-riseInLeft      :   true !default;
+$use-riseInRight     :   true !default;
+
+// Rise Out
+$use-riseOutBack     :   true !default;
+$use-riseOutFront    :   true !default;
+$use-riseOutLeft     :   true !default;
+$use-riseOutRight    :   true !default;
+
+// Revolve In
+$use-revolveInUp     :   true !default;
+$use-revolveInDown   :   true !default;
+$use-revolveInLeft   :   true !default;
+$use-revolveInRight  :   true !default;
+
+// Revolve Out
+$use-revolveOutUp    :   true !default;
+$use-revolveOutDown  :   true !default;
+$use-revolveOutLeft  :   true !default;
+$use-revolveOutRight :   true !default;
+
+// Spread In
+$use-spreadInLeft    :   true !default;
+$use-spreadInRight   :   true !default;
+
+// Spread Out
+$use-spreadOutLeft    :   true !default;
+$use-spreadOutRight   :   true !default;
+
+// Spiralling In
+$use-spirallingInUpLeft    :   true !default;
+$use-spirallingInUpRight   :   true !default;
+$use-spirallingInDownLeft  :   true !default;
+$use-spirallingInDownRight :   true !default;
+
+// Spiralling Out
+$use-spirallingOutUpLeft    :   true !default;
+$use-spirallingOutUpRight   :   true !default;
+$use-spirallingOutDownLeft  :   true !default;
+$use-spirallingOutDownRight :   true !default;
+

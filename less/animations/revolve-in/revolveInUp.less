@@ -1,0 +1,18 @@
+& when (@use-revolveInUp = true) {
+
+    @keyframes revolveInUp {
+        0% {
+            opacity: 0;
+            transform: rotateX(360deg) translateZ(200px) translateY(600px);
+        }
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg) translateZ(0px) translateY(0px);
+        }
+    }
+
+    .revolveInUp {
+        transform-origin: bottom center;
+        animation-name: revolveInUp;
+    }
+}

@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Animate.3d</title>
+<meta name="description" content="A very cool animation library of CSS 3.0">
+<meta name="keywords" content="Animate.3d">
+<link href="css/animate.3d.css" rel="stylesheet">
+<link href="css/flex.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+</head>
+<body onload="initSelect()">
+
+    <div layout="row" layout-align="center center">
+        <div flex="50">
+            <div class="a3d-box demo">
+                <div id="previewPanel" class="a3d demo spread" layout="column" layout-align="center center">
+                    <span style="font-size:64px">Demo</span>
+                    <!-- <img src="img/mountain.jpg"> -->
+                </div>
+            </div>
+        </div>
+        <div flex="50">
+            <div class="toolbar">
+                <select name="" multiple="true" id="animationsSelector">
+
+                    <optgroup label="Spiralling Out">
+                        <option value="spirallingOutDownLeft">Out-down-left</option>
+                        <option value="spirallingOutDownRight">Out-down-right</option>
+                        <option value="spirallingOutUpLeft">Out-up-left</option>
+                        <option value="spirallingOutUpRight">Out-up-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spiralling In">
+                        <option value="spirallingInDownLeft">In-down-left</option>
+                        <option value="spirallingInDownRight">In-down-right</option>
+                        <option value="spirallingInUpLeft">In-up-left</option>
+                        <option value="spirallingInUpRight">In-up-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spread Out">
+                        <option value="spreadOutLeft">Out-left</option>
+                        <option value="spreadOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Spread In">
+                        <option value="spreadInLeft">In-left</option>
+                        <option value="spreadInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Revolve Out">
+                        <option value="revolveOutDown">Out-Down</option>
+                        <option value="revolveOutUp">Out-Up</option>
+                        <option value="revolveOutLeft">Out-left</option>
+                        <option value="revolveOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Revolve In">
+                        <option value="revolveInDown">In-Down</option>
+                        <option value="revolveInUp">In-Up</option>
+                        <option value="revolveInLeft">In-left</option>
+                        <option value="revolveInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Rise Out">
+                        <option value="riseOutFront">Out-Front</option>
+                        <option value="riseOutBack">Out-Back</option>
+                        <option value="riseOutLeft">Out-left</option>
+                        <option value="riseOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Rise In">
+                        <option value="riseInFront">In-Front</option>
+                        <option value="riseInBack">In-Back</option>
+                        <option value="riseInLeft">In-left</option>
+                        <option value="riseInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Slide Out">
+                        <option value="slideOutFront">Out-Front</option>
+                        <option value="slideOutBack">Out-Back</option>
+                        <option value="slideOutLeft">Out-left</option>
+                        <option value="slideOutRight">Out-right</option>
+                    </optgroup>
+
+                    <optgroup label="Slide In">
+                        <option value="slideInFront">In-Front</option>
+                        <option value="slideInBack">In-Back</option>
+                        <option value="slideInLeft">In-left</option>
+                        <option value="slideInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Pull Out">
+                        <option value="pullOut">Pull Out</option>
+                        <option value="pullOutDown">Out-down</option>
+                        <option value="pullOutUp">Out-up</option>
+                        <option value="pullOutLeft">Out-left</option>
+                        <option value="pullOutRight">Out-right</option>
+                        <option value="pullOutDownBig">Out-down-big</option>
+                        <option value="pullOutUpBig">Out-up-big</option>
+                        <option value="pullOutLeftBig">Out-left-big</option>
+                        <option value="pullOutRightBig">Out-right-big</option>
+                    </optgroup>
+
+                    <optgroup label="Pull In">
+                        <option value="pullIn">Pull In</option>
+                        <option value="pullInDown">in-down</option>
+                        <option value="pullInUp">in-up</option>
+                        <option value="pullInLeft">in-left</option>
+                        <option value="pullInRight">in-right</option>
+                        <option value="pullInDownBig">in-down-big</option>
+                        <option value="pullInUpBig">in-up-big</option>
+                        <option value="pullInLeftBig">in-left-big</option>
+                        <option value="pullInRightBig">in-right-big</option>
+                    </optgroup>
+
+                    <optgroup label="Push In">
+                        <option value="pushIn">Push In</option>
+                        <option value="pushInDown">in-down</option>
+                        <option value="pushInUp">in-up</option>
+                        <option value="pushInLeft">in-left</option>
+                        <option value="pushInRight">in-right</option>
+                        <option value="pushInDownBig">in-down-big</option>
+                        <option value="pushInUpBig">in-up-big</option>
+                        <option value="pushInLeftBig">in-left-big</option>
+                        <option value="pushInRightBig">in-right-big</option>
+                    </optgroup>
+
+                    <optgroup label="Push Out">
+                        <option value="pushOut">Push Out</option>
+                        <option value="pushOutDown">out-down</option>
+                        <option value="pushOutUp">out-up</option>
+                        <option value="pushOutLeft">out-left</option>
+                        <option value="pushOutRight">out-right</option>
+                        <option value="pushOutDownBig">out-down-big</option>
+                        <option value="pushOutUpBig">out-up-big</option>
+                        <option value="pushOutLeftBig">out-left-big</option>
+                        <option value="pushOutRightBig">out-right-big</option>
+                    </optgroup>
+                </select>
+                <button id="animate-it" onclick="animateIt()">Apply Animattion</button>
+            </div>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+    function initSelect() {
+        var selector = document.querySelector('#animationsSelector');
+        var panel = document.querySelector('#previewPanel');
+
+        selector.addEventListener('change', function() {
+            panel.className = ['a3d', 'demo', this.value].join(' ');
+        });
+    }
+
+    function animateIt() {
+        var selector = document.querySelector('#animationsSelector');
+        var panel = document.querySelector('#previewPanel');
+        panel.className = ['a3d', 'demo'];
+
+        setTimeout(function(){
+            panel.className = ['a3d', 'demo', selector.value].join(' ');
+        }, 100);
+    }
+
+</script>
+</body>
+</html>

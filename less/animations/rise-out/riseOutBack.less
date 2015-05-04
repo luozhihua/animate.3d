@@ -1,0 +1,22 @@
+& when (@use-riseOutBack = true) {
+
+    @keyframes riseOutBack {
+        0% {
+            transform: rotate3d(1,0,0,0deg) translateY(0);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,0,0,45deg) translateY(-100%);
+        }
+        100% {
+            opacity: 0;
+            transform: rotate3d(1,0,0,45deg) translateY(900%);
+        }
+    }
+
+    .riseOutBack {
+        transform-origin: top center;
+        animation-name: riseOutBack;
+        animation-timing-function: ease-in-out;
+    }
+}

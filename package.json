@@ -1,0 +1,35 @@
+{
+  "name": "animate.3d",
+  "version": "0.3.0",
+  "author": "Colin Luo",
+  "description": "A very cool animation library of CSS 3.0",
+  "createTime": "Tuesday, April 21, 2015 19:16:24",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:luozhihua/animate.3d.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "eport": "^0.1.2",
+    "grunt": "^0.4.5",
+    "grunt-autoprefixer": "^3.0.0",
+    "grunt-commands": "^0.1.8",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "*",
+    "grunt-contrib-cssmin": "^0.12.2",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-less": "^1.0.1",
+    "grunt-contrib-stylus": "^0.21.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-notify": "^0.4.1",
+    "grunt-sass": "^0.18.1",
+    "grunt-sassdoc": "^2.0.0",
+    "grunt-scss2less": "0.0.1",
+    "grunt-wiredep": "^2.0.0",
+    "jshint-stylish": "^1.0.1",
+    "load-grunt-tasks": "^3.1.0",
+    "node-sass": "^2.1.1",
+    "time-grunt": "^1.1.1"
+  }
+}

@@ -1,0 +1,18 @@
+@if ($use-pullOutLeft == true) {
+
+    @keyframes pullOutLeft {
+        0% {
+            opacity: 1;
+            transform: translateX(0px) translateZ(0px) rotateY(0deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateX(-$pp-translate-y) translateZ($pp-translate-z) rotateY(-$pp-rotate);
+        }
+    }
+
+    .pullOutLeft {
+        transform-origin: left center;
+        animation-name: pullOutLeft;
+    }
+}

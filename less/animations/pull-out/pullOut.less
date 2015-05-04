@@ -1,0 +1,21 @@
+& when (@use-pullOut = true) {
+
+    @keyframes pullOut {
+        0% {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+        50% {
+            opacity: 0.95;
+            transform: translateZ(@pp-translate-z / 2);
+        }
+        100% {
+            opacity: 0;
+            transform: translateZ(@pp-translate-z);
+        }
+    }
+
+    .pullOut {
+        animation-name: pullOut;
+    }
+}

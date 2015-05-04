@@ -1,0 +1,23 @@
+& when (@use-spirallingOutUpLeft = true) {
+
+
+    @keyframes spirallingOutUpLeft {
+        0% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,0deg) rotate(0deg)  translateY(0px);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,1,1,60deg) rotate(180deg) translateY(200px);
+        }
+        100% {
+            opacity: 0;
+            transform: rotate3d(1,1,1,60deg) rotate(360deg) translateY(400px);
+        }
+    }
+
+    .spirallingOutUpLeft {
+        transform-origin:center;
+        animation-name: spirallingOutUpLeft;
+    }
+}
