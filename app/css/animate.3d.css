@@ -2503,3 +2503,32 @@
           transform-origin: center;
   -webkit-animation-name: spirallingOutDownRight;
           animation-name: spirallingOutDownRight; }
+
+@-webkit-keyframes squeezeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(45deg) translateY(-50%) scale(2, 0.01);
+            transform: rotateX(45deg) translateY(-50%) scale(2, 0.01); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg) translateY(0%) scale(1);
+            transform: rotateX(0deg) translateY(0%) scale(1); } }
+
+@keyframes squeezeInDown {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotateX(45deg) translateY(-50%) scale(2, 0.01);
+            transform: rotateX(45deg) translateY(-50%) scale(2, 0.01); }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: rotateX(0deg) translateY(0%) scale(1);
+            transform: rotateX(0deg) translateY(0%) scale(1); } }
+
+.squeezeInDown {
+  -webkit-transform-origin: center 20%;
+      -ms-transform-origin: center 20%;
+          transform-origin: center 20%;
+  -webkit-animation-name: squeezeInDown;
+          animation-name: squeezeInDown; }

@@ -24,6 +24,10 @@ Setp 3. _Add css class of animate.3d.css to element:_
 </div>
 ```
 
+# Examples
+- jQuery example (Comming soon);
+- Angular example (Comming soon);
+
 # Using scss/less/stylus?
 Animate.3D provide official SCSS / LESS / Stylus version, please select the appropriate for your version.
 

@@ -1,0 +1,18 @@
+@if ($use-squeezeInDown == true) {
+
+    @keyframes squeezeInDown {
+        0% {
+            opacity: 0;
+            transform: rotateX(45deg) translateY(-50%) scale(2,0.01);
+        }
+        100% {
+            opacity: 1;
+            transform: rotateX(0deg) translateY(0%) scale(1);
+        }
+    }
+
+    .squeezeInDown {
+        transform-origin: center 20%;
+        animation-name: squeezeInDown;
+    }
+}
