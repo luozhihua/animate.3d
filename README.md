@@ -1,5 +1,5 @@
 # About
-A (Beta) cool library of CSS 3D animations, [Site](http://luozhihua.github.io/animate.3d/).
+A (Beta) cool library of CSS 3D animations, [Animate.3d Site](http://luozhihua.github.io/animate.3d/).
 
 # Usage
 
