@@ -33,7 +33,7 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
 
 - SCSS main file: `./scss/animate.3d.scss`
 - LESS main file: `./less/animate.3d.less`
-- Stylus main file: `./stylus/animate.3d.styl`
+- Stylus main file: `./stylus/animate.3d.styl` (todo)
 
 # Supported Animateions
 
@@ -141,4 +141,4 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
 
 # Todo List
 
-_nothing_
+- support stylus.
