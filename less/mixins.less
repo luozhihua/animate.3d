@@ -20,27 +20,27 @@
 /// @returns {String}           Styles of atached vector prefixes.
 /// @example:
 ///     .fadeIn {
-///         .animate-prefixer(animation, fadeIn);
+///         .a3d-keyframe(animation, fadeIn);
 ///     }
-///     .animate-keyframe(fadeIn) {
+///     .a3d-keyframe(fadeIn) {
 ///         0% {opacity: 0;}
 ///         100% {opacity: 1;}
 ///     }
 ///
 .a3d-keyframe(@animation-name) {
-    @-webkit-keyframes ~"@animation-name" {
-        @content;
-    }
+   @-webkit-keyframes ~"@animation-name" {
+       @content;
+   }
 
-    @-moz-keyframes ~"@animation-name" {
-        @content;
-    }
+   @-moz-keyframes ~"@animation-name" {
+       @content;
+   }
 
-    @-o-keyframes ~"@animation-name" {
-        @content;
-    }
+   @-o-keyframes ~"@animation-name" {
+       @content;
+   }
 
-    @keyframes ~"@animation-name" {
-        @content;
-    }
+   @keyframes ~"@animation-name" {
+       @content;
+   }
 }

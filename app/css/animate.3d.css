@@ -2527,8 +2527,8 @@
             transform: rotateX(0deg) translateY(0%) scale(1); } }
 
 .squeezeInDown {
-  -webkit-transform-origin: center 20%;
-      -ms-transform-origin: center 20%;
-          transform-origin: center 20%;
+  -webkit-transform-origin: bottom;
+      -ms-transform-origin: bottom;
+          transform-origin: bottom;
   -webkit-animation-name: squeezeInDown;
           animation-name: squeezeInDown; }

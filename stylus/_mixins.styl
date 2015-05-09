@@ -17,31 +17,39 @@
 ///     }
 a3d-prefixer($property)
   //Function quote is not supported in Stylus
-  //-webkit-#<Sass::Script::Tree::Interpolation:0x007f951489abb0>: unquote({$value})
+  //-webkit-#<Sass::Script::Tree::Interpolation:0x007f83149d5758>: unquote({$value})
   //Function quote is not supported in Stylus
-  //-moz-#<Sass::Script::Tree::Interpolation:0x007f9514899dc8>: unquote({$value})
+  //-moz-#<Sass::Script::Tree::Interpolation:0x007f83149d4c18>: unquote({$value})
   //Function quote is not supported in Stylus
-  //-o-#<Sass::Script::Tree::Interpolation:0x007f95148995a8>: unquote({$value})
+  //-o-#<Sass::Script::Tree::Interpolation:0x007f83149d4470>: unquote({$value})
   //Function quote is not supported in Stylus
   //{(interpolation nil $property nil)}: unquote({$value})
 /// Generate keyframes animations with vendor prefixes in one hit
-/// @param   {String} $animation-name animation name
-/// @returns {String}           Styles of atached vector prefixes.
-/// @example:
-///     .fadeIn {
-///         @include animate-prefixer(animation, fadeIn);
-///     }
-///     @include animate-keyframe(fadeIn) {
-///         0% {opacity: 0;}
-///         100% {opacity: 1;}
-///     }
-///
-a3d-keyframe($animation-name)
-  @-webkit-keyframes
-    {block}
-  @-moz-keyframes
-    {block}
-  @-o-keyframes
-    {block}
-  @keyframes
-    {block}
+// / @param   {String} $animation-name animation name
+// / @returns {String}           Styles of atached vector prefixes.
+// / @example:
+// /     .fadeIn {
+// /         @include a3d-keyframe(animation, fadeIn);
+// /     }
+// /     @include a3d-keyframe(fadeIn) {
+// /         0% {opacity: 0;}
+// /         100% {opacity: 1;}
+// /     }
+//
+// @mixin a3d-keyframe($animation-name) {
+//     @-webkit-keyframes #{$animation-name} {
+//         @content;
+//     }
+//
+//     @-moz-keyframes #{$animation-name} {
+//         @content;
+//     }
+//
+//     @-o-keyframes #{$animation-name} {
+//         @content;
+//     }
+//
+//     @keyframes #{$animation-name} {
+//         @content;
+//     }
+// }

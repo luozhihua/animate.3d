@@ -154,21 +154,24 @@ module.exports = function (grunt) {
       }
     },
 
-    less: {
-      development: {
-        options: {
-          paths: ['dist/css']
-        },
-        files: {
-          'dist/animate.3d.css': 'less/**/*.less'
-        }
-      }
-    },
+    // less: {
+    //   development: {
+    //     options: {
+    //       paths: ['dist/css']
+    //     },
+    //     files: {
+    //       'dist/animate.3d.css': 'less/**/*.less'
+    //     }
+    //   }
+    // },
 
     commands: {
         options: {force: false},
         scss2stylus: {
-            cmd: 'cd ./scss/ && sass2stylus **/*.scss ../stylus',
+            cmd: 'cd ./scss/ && sass2stylus **/*.scss ../stylus'
+        },
+        less: {
+          cmd: 'cd ./less/ && lessc animate.3d.less ../dist/animate.3d.css'
         }
     },
 
@@ -193,7 +196,7 @@ module.exports = function (grunt) {
     // Auto add css prefix like -webkit-*, -moz-*
     autoprefixer: {
       options: {
-        browsers: ['> 1%', 'last 5 versions', 'Firefox ESR', 'Opera 10.1']
+        browsers: ['> 1%', 'last 10 versions', 'ios > 7', 'Firefox > 20', 'Opera > 20', 'ie > 8', 'ie_mob 10']
       },
       dist: {
         files: [{
@@ -326,6 +329,7 @@ module.exports = function (grunt) {
       case 'less':
         grunt.task.run([
           'clean:less',
+          'clean:dist',
           'wiredep',
           'scss2less',
           'less',
@@ -337,6 +341,7 @@ module.exports = function (grunt) {
       case 'stylus':
         grunt.task.run([
           'clean:stylus',
+          'clean:dist',
           'wiredep',
           'scss2stylus',
           'stylus',
@@ -356,9 +361,9 @@ module.exports = function (grunt) {
     }
   });
 
-
   grunt.registerTask('scss2stylus', ['commands:scss2stylus']);
   grunt.registerTask('scss', ['sass']);
+  grunt.registerTask('less', ['commands:less']);
   grunt.registerTask('scssdoc', ['sassdoc']);
   grunt.registerTask('doc', ['sassdoc']);
 
