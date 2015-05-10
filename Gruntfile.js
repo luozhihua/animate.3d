@@ -91,7 +91,9 @@ module.exports = function (grunt) {
         ignorePath: /^\/|\.\.\//,
         cwd: './',
         src: ['app/index.html'],
-        exclude: []
+        exclude: [
+          'libs//animate.3d/dist/animate.3d.css' // ignore css file because will import it with scss.
+        ]
       },
       sass: {
         src: ['scss/**/*.{scss,sass}'],

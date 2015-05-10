@@ -81,17 +81,17 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] pullOutLeftBig;
   - [x] pullOutRightBig;
 
-- Slide In effects
-  - [x] slideInBack;
-  - [x] slideInFront;
-  - [x] slideInLeft;
-  - [x] slideInRight;
+- Slip In effects
+  - [x] slipInBack;
+  - [x] slipInFront;
+  - [x] slipInLeft;
+  - [x] slipInRight;
 
-- Slide Out effects
-  - [x] slideOutBack;
-  - [x] slideOutFront;
-  - [x] slideOutLeft;
-  - [x] slideOutRight;
+- Slip Out effects
+  - [x] slipOutBack;
+  - [x] slipOutFront;
+  - [x] slipOutLeft;
+  - [x] slipOutRight;
 
 - Rise In effects
   - [x] riseInFrontBack;

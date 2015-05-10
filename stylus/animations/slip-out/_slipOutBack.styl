@@ -1,0 +1,14 @@
+if $use-slipOutBack == true
+  @keyframes
+    0$
+      opacity: 1
+      transform: translateY(0px) translateZ(0px) rotateX(0deg)
+    50$
+      opacity: 0.9
+      transform: translateY(0px) translateZ(20px) rotateX(90deg)
+    100$
+      transform: translateY(100px) translateZ(1000px) rotateX(90deg)
+  .slipOutBack
+    transform-origin: bottom center
+    animation-name: slipOutBack
+    animation-timing-function: ease-in-out

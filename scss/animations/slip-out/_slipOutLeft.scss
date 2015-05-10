@@ -1,22 +1,22 @@
-@if ($use-slideOutFront == true) {
+@if ($use-slipOutLeft == true) {
 
-    @keyframes slideOutFront {
+    @keyframes slipOutLeft {
         0% {
             transform: translateY(0px) translateZ(0px) rotateX(0deg);
         }
         50% {
             opacity: 1;
-            transform: translateY(0px) translateZ(-20px) rotateX(90deg);
+            transform: translateX(-20px) translateZ(-20px) rotateX(90deg);
         }
         100% {
             opacity: 0;
-            transform: translateY(100px) translateZ(-1000px) rotateX(90deg);
+            transform: translateX(-1000px) translateZ(-100px) rotateX(90deg);
         }
     }
 
-    .slideOutFront {
+    .slipOutLeft {
         transform-origin: bottom center;
-        animation-name: slideOutFront;
+        animation-name: slipOutLeft;
         animation-timing-function: ease-in-out;
     }
 }

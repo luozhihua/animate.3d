@@ -1,0 +1,21 @@
+@if ($use-turnOutYCCW == true) {
+
+    @keyframes turnOutYCCW {
+        0% {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+        50% {
+            opacity: 0.5;
+            transform: rotateY(-90deg) scale(0.7);
+        }
+        100% {
+            opacity: 0;
+            transform: rotateY(-180deg) scale(1);
+        }
+    }
+
+    .turnOutYCCW {
+        animation-name: turnOutYCCW;
+    }
+}

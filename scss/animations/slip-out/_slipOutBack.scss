@@ -1,6 +1,6 @@
-@if ($use-slideOutBack == true) {
+@if ($use-slipOutBack == true) {
 
-    @keyframes slideOutBack {
+    @keyframes slipOutBack {
         0% {
             opacity: 1;
             transform: translateY(0px) translateZ(0px) rotateX(0deg);
@@ -14,9 +14,9 @@
         }
     }
 
-    .slideOutBack {
+    .slipOutBack {
         transform-origin: bottom center;
-        animation-name: slideOutBack;
+        animation-name: slipOutBack;
         animation-timing-function: ease-in-out;
     }
 }

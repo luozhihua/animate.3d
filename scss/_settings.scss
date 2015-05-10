@@ -81,17 +81,17 @@ $use-pullOutLeftBig  :   true !default;
 $use-pullOutRight    :   true !default;
 $use-pullOutRightBig :   true !default;
 
-// Slide in
-$use-slideInBack     :   true !default;
-$use-slideInFront    :   true !default;
-$use-slideInLeft     :   true !default;
-$use-slideInRight    :   true !default;
+// Slip in
+$use-slipInBack     :   true !default;
+$use-slipInFront    :   true !default;
+$use-slipInLeft     :   true !default;
+$use-slipInRight    :   true !default;
 
-// Slide out
-$use-slideOutBack    :   true !default;
-$use-slideOutFront   :   true !default;
-$use-slideOutLeft    :   true !default;
-$use-slideOutRight   :   true !default;
+// Slip out
+$use-slipOutBack    :   true !default;
+$use-slipOutFront   :   true !default;
+$use-slipOutLeft    :   true !default;
+$use-slipOutRight   :   true !default;
 
 // Rise In
 $use-riseInBack      :   true !default;
@@ -142,4 +142,26 @@ $use-squeezeInUp    :   true !default;
 $use-squeezeInDown  :   true !default;
 $use-squeezeInLeft  :   true !default;
 $use-squeezeInRight :   true !default;
+
+// Turn In
+$use-turnIn      :   true !default;
+$use-turnInYCW   :   true !default;
+$use-turnInYCCW  :   true !default;
+$use-turnInXDown :   true !default;
+$use-turnInXUp   :   true !default;
+$use-turnInUp    :   true !default;
+$use-turnInDown  :   true !default;
+$use-turnInLeft  :   true !default;
+$use-turnInRight :   true !default;
+
+// Turn Out
+$use-turnOut      :   true !default;
+$use-turnOutYCW   :   true !default;
+$use-turnOutYCCW  :   true !default;
+$use-turnOutXDown :   true !default;
+$use-turnOutXUp   :   true !default;
+$use-turnOutUp    :   true !default;
+$use-turnOutDown  :   true !default;
+$use-turnOutLeft  :   true !default;
+$use-turnOutRight :   true !default;
 

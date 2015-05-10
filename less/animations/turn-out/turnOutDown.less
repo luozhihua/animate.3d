@@ -1,0 +1,18 @@
+& when (@use-turnOutDown = true) {
+
+    @keyframes turnOutDown {
+        0% {
+            opacity: 1;
+            transform: rotateX(0deg) translateZ(0px) translateY(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: rotateX(360deg) translateZ(200px) translateY(600px);
+        }
+    }
+
+    .turnOutDown {
+        transform-origin: bottom center;
+        animation-name: turnOutDown;
+    }
+}

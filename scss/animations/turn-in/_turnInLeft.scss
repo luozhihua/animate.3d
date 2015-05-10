@@ -1,0 +1,28 @@
+@if ($use-turnInLeft == true) {
+
+    @keyframes turnInLeft {
+        0% {
+            transform: rotateY(-180deg);
+        }
+        40% {
+            transform: rotateY(-45deg);
+        }
+        70% {
+            transform: rotateY(20deg);
+        }
+        80% {
+            transform: rotateY(-10deg);
+        }
+        90% {
+            transform: rotateY(5deg);
+        }
+        100% {
+            transform: rotateY(0deg);
+        }
+    }
+
+    .turnInLeft {
+        transform-origin:center right;
+        animation-name: turnInLeft;
+    }
+}

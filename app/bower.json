@@ -1,0 +1,20 @@
+{
+  "name": "animate.3d.demo",
+  "version": "0.3.1",
+  "homepage": "https://github.com/luozhihua/animate.3d",
+  "authors": [
+    "Colin Luo <mail@luozhihua.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "animate.css": "~3.2.6"
+  }
+}

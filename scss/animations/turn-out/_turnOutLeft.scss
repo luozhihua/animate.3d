@@ -1,0 +1,18 @@
+@if ($use-turnOutLeft == true) {
+
+    @keyframes turnOutLeft {
+        0% {
+            opacity: 1;
+            transform: rotateY(0deg) translateZ(0px) translateX(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: rotateY(360deg) translateZ(200px) translateX(600px);
+        }
+    }
+
+    .turnOutLeft {
+        transform-origin: bottom center;
+        animation-name: turnOutLeft;
+    }
+}

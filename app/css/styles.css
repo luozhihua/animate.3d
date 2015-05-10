@@ -7,12 +7,8 @@ body > [layout=row] {
     height: 100%;
 }
 
-.a3d-box.demo {
-    height: 100%;
-    width: 100%;
-}
-
-.a3d.demo {
+.demo .a3d,
+.demo .animated {
     margin: auto;
     width: 320px;
     height: 240px;
@@ -23,12 +19,12 @@ body > [layout=row] {
 }
 
 
-.a3d.demo span {
+.demo span {
     font-size:64px;
     color: #fff;
 }
 
-.a3d.demo img {
+.demo img {
     width: 100%;
 }
 

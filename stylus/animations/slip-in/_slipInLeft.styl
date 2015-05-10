@@ -1,0 +1,14 @@
+if $use-slipInLeft == true
+  @keyframes
+    0$
+      opacity: 0
+      transform: translateX(-1000px) translateZ(-100px) rotateX(90deg)
+    50$
+      opacity: 1
+      transform: translateX(-20px) translateZ(-20px) rotateX(90deg)
+    100$
+      transform: translateY(0px) translateZ(0px) rotateX(0deg)
+  .slipInLeft
+    transform-origin: bottom center
+    animation-name: slipInLeft
+    animation-timing-function: ease-in-out

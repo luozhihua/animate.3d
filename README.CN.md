@@ -78,16 +78,16 @@ bower install animate.3d --save
   - [x] pullOutRightBig;
 
 - 水平滑入效果
-  - [x] slideInBack;
-  - [x] slideInFront;
-  - [x] slideInLeft;
-  - [x] slideInRight;
+  - [x] slipInBack;
+  - [x] slipInFront;
+  - [x] slipInLeft;
+  - [x] slipInRight;
 
 - 水平滑出效果
-  - [x] slideOutBack;
-  - [x] slideOutFront;
-  - [x] slideOutLeft;
-  - [x] slideOutRight;
+  - [x] slipOutBack;
+  - [x] slipOutFront;
+  - [x] slipOutLeft;
+  - [x] slipOutRight;
 
 - 飘入效果
   - [x] riseInFrontBack;

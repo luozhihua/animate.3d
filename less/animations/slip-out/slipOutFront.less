@@ -1,0 +1,22 @@
+& when (@use-slipOutFront = true) {
+
+    @keyframes slipOutFront {
+        0% {
+            transform: translateY(0px) translateZ(0px) rotateX(0deg);
+        }
+        50% {
+            opacity: 1;
+            transform: translateY(0px) translateZ(-20px) rotateX(90deg);
+        }
+        100% {
+            opacity: 0;
+            transform: translateY(100px) translateZ(-1000px) rotateX(90deg);
+        }
+    }
+
+    .slipOutFront {
+        transform-origin: bottom center;
+        animation-name: slipOutFront;
+        animation-timing-function: ease-in-out;
+    }
+}

@@ -1,0 +1,18 @@
+& when (@use-turnOutRight = true) {
+
+    @keyframes turnOutRight {
+        0% {
+            opacity: 1;
+            transform: rotateY(0deg) translateZ(0px) translateX(0px);
+        }
+        100% {
+            opacity: 0;
+            transform: rotateY(-359deg) translateZ(200px) translateX(-400px);
+        }
+    }
+
+    .turnOutRight {
+        transform-origin: right;
+        animation-name: turnOutRight;
+    }
+}

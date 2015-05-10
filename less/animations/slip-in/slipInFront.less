@@ -1,6 +1,6 @@
-@if ($use-slideInFront == true) {
+& when (@use-slipInFront = true) {
 
-    @keyframes slideInFront {
+    @keyframes slipInFront {
         0% {
             opacity: 0;
             transform: translateY(100px) translateZ(-1000px) rotateX(90deg);
@@ -14,9 +14,9 @@
         }
     }
 
-    .slideInFront {
+    .slipInFront {
         transform-origin: bottom center;
-        animation-name: slideInFront;
+        animation-name: slipInFront;
         animation-timing-function: ease-in-out;
     }
 }

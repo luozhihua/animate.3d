@@ -7,7 +7,8 @@
   ],
   "description": "A very cool animation library of CSS 3.0",
   "main": [
-    "src/animate.3d.scss",
+    "scss/animate.3d.scss",
+    "less/animate.3d.less",
     "dist/animate.3d.css"
   ],
   "moduleType": [

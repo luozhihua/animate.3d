@@ -6,6 +6,7 @@
 <title>Animate.3d</title>
 <meta name="description" content="A very cool animation library of CSS 3.0">
 <meta name="keywords" content="Animate.3d">
+<link href="libs/animate.css/animate.min.css" rel="stylesheet">
 <link href="css/animate.3d.css" rel="stylesheet">
 <link href="css/flex.css" rel="stylesheet">
 <link href="css/styles.css" rel="stylesheet">
@@ -30,6 +31,30 @@
                         <option value="squeezeInUp">In-down-right</option>
                         <option value="squeezeInLeft">In-up-left</option>
                         <option value="squeezeInRight">In-up-right</option>
+                    </optgroup>
+
+                    <optgroup label="turn In">
+                        <option value="turnIn">In</option>
+                        <option value="turnInYCW">In Y Clockwise (CW)</option>
+                        <option value="turnInYCCW">In Y Anti-Clockwise (CCW)</option>
+                        <option value="turnInXDown">In X Down</option>
+                        <option value="turnInXUp">In X Up</option>
+                        <option value="turnInDown">In-down</option>
+                        <option value="turnInUp">In-up</option>
+                        <option value="turnInLeft">In-left</option>
+                        <option value="turnInRight">In-right</option>
+                    </optgroup>
+
+                    <optgroup label="Turn Out">
+                        <option value="turnOut">Out</option>
+                        <option value="turnOutYCW">Out Y Clockwise (CW)</option>
+                        <option value="turnOutYCCW">Out Y Anti-Clockwise (CCW)</option>
+                        <option value="turnOutXDown">Out X Down</option>
+                        <option value="turnOutXUp">Out X Up</option>
+                        <option value="turnOutDown">Out-down</option>
+                        <option value="turnOutUp">Out-up</option>
+                        <option value="turnOutLeft">Out-left</option>
+                        <option value="turnOutRight">Out-right</option>
                     </optgroup>
 
                     <optgroup label="Spiralling Out">
@@ -84,18 +109,18 @@
                         <option value="riseInRight">In-right</option>
                     </optgroup>
 
-                    <optgroup label="Slide Out">
-                        <option value="slideOutFront">Out-Front</option>
-                        <option value="slideOutBack">Out-Back</option>
-                        <option value="slideOutLeft">Out-left</option>
-                        <option value="slideOutRight">Out-right</option>
+                    <optgroup label="Slip Out">
+                        <option value="slipOutFront">Out-Front</option>
+                        <option value="slipOutBack">Out-Back</option>
+                        <option value="slipOutLeft">Out-left</option>
+                        <option value="slipOutRight">Out-right</option>
                     </optgroup>
 
-                    <optgroup label="Slide In">
-                        <option value="slideInFront">In-Front</option>
-                        <option value="slideInBack">In-Back</option>
-                        <option value="slideInLeft">In-left</option>
-                        <option value="slideInRight">In-right</option>
+                    <optgroup label="Slip In">
+                        <option value="slipInFront">In-Front</option>
+                        <option value="slipInBack">In-Back</option>
+                        <option value="slipInLeft">In-left</option>
+                        <option value="slipInRight">In-right</option>
                     </optgroup>
 
                     <optgroup label="Pull Out">
@@ -146,29 +171,31 @@
                         <option value="pushOutRightBig">out-right-big</option>
                     </optgroup>
                 </select>
-                <button id="animate-it" onclick="animateIt()">Apply Animattion</button>
+                <button id="animate-it" onclick="animateIt(this)">Apply Animattion</button>
             </div>
         </div>
     </div>
 
 <script type="text/javascript">
 
+    var defaultCls = ['animated'];
+
     function initSelect() {
         var selector = document.querySelector('#animationsSelector');
         var panel = document.querySelector('#previewPanel');
 
         selector.addEventListener('change', function() {
-            panel.className = ['a3d', 'demo', this.value].join(' ');
+            panel.className = defaultCls.concat([this.value]).join(' ');
         });
     }
 
     function animateIt() {
         var selector = document.querySelector('#animationsSelector');
         var panel = document.querySelector('#previewPanel');
-        panel.className = ['a3d', 'demo'];
+        panel.className = defaultCls.join(' ');
 
-        setTimeout(function(){
-            panel.className = ['a3d', 'demo', selector.value].join(' ');
+        setTimeout(function() {
+            panel.className = defaultCls.concat([selector.value]).join(' ');
         }, 100);
     }
 

@@ -1,0 +1,7 @@
+@if ($use-turnInYCW == true) {
+
+    .turnInYCW {
+        transform-origin: center;
+        animation-name: turnIn;
+    }
+}
