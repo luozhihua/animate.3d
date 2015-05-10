@@ -146,3 +146,45 @@ bower install animate.3d --save
   - [ ] revolveOutUpBig
   - [ ] revolveOutLeftBig
   - [ ] revolveOutRightBig
+
+- 摊开进场效果
+  - [x] spreadInLeft
+  - [x] spreadInRight
+
+- 摊开退场效果
+  - [x] spreadOutLeft
+  - [x] spreadOutRight
+
+- 螺旋进场效果
+  - [x] spirallingInDownLeft
+  - [x] spirallingInDownRight
+  - [x] spirallingInUpLeft
+  - [x] spirallingInUpRight
+
+- 螺旋退场效果
+  - [x] spirallingOutDownLeft
+  - [x] spirallingOutDownRight
+  - [x] spirallingOutUpLeft
+  - [x] spirallingOutUpRight
+
+- 翻转进场效果
+  - [X] turnIn
+  - [X] turnInYCW
+  - [X] turnInYCCW
+  - [X] turnInXDown
+  - [X] turnInXUp
+  - [X] turnInUp
+  - [X] turnInDown
+  - [X] turnInLeft
+  - [X] turnInRight
+
+- 翻转退场效果
+  - [X] turnOut
+  - [X] turnOutYCW
+  - [X] turnOutYCCW
+  - [X] turnOutXDown
+  - [X] turnOutXUp
+  - [X] turnOutUp
+  - [X] turnOutDown
+  - [X] turnOutLeft
+  - [X] turnOutRight

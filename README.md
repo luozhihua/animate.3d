@@ -139,6 +139,28 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] spirallingOutUpLeft
   - [x] spirallingOutUpRight
 
+- Turn In Effects
+  - [X] $use-turnIn
+  - [X] $use-turnInYCW
+  - [X] $use-turnInYCCW
+  - [X] $use-turnInXDown
+  - [X] $use-turnInXUp
+  - [X] $use-turnInUp
+  - [X] $use-turnInDown
+  - [X] $use-turnInLeft
+  - [X] $use-turnInRight
+
+- Turn Out Effects
+  - [X] $use-turnOut
+  - [X] $use-turnOutYCW
+  - [X] $use-turnOutYCCW
+  - [X] $use-turnOutXDown
+  - [X] $use-turnOutXUp
+  - [X] $use-turnOutUp
+  - [X] $use-turnOutDown
+  - [X] $use-turnOutLeft
+  - [X] $use-turnOutRight
+
 # Todo List
 
 - support stylus.
