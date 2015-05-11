@@ -93,17 +93,17 @@ Animate.3D provide official SCSS / LESS / Stylus version, please select the appr
   - [x] slipOutLeft;
   - [x] slipOutRight;
 
-- Rise In effects
-  - [x] riseInFrontBack;
-  - [x] riseInFrontFront;
-  - [x] riseInFrontLeft;
-  - [x] riseInFrontRight;
+- Flight In effects
+  - [x] flightInFrontBack;
+  - [x] flightInFrontFront;
+  - [x] flightInFrontLeft;
+  - [x] flightInFrontRight;
 
-- Rise Out effects
-  - [x] riseOutFrontUp;
-  - [x] riseOutFrontDown;
-  - [x] riseOutFrontLeft;
-  - [x] riseOutFrontRight;
+- Flight Out effects
+  - [x] flightOutFrontUp;
+  - [x] flightOutFrontDown;
+  - [x] flightOutFrontLeft;
+  - [x] flightOutFrontRight;
 
 - Revolve In effects
   - [x] revolveIn

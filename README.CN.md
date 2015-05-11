@@ -89,17 +89,17 @@ bower install animate.3d --save
   - [x] slipOutLeft;
   - [x] slipOutRight;
 
-- 飘入效果
-  - [x] riseInFrontBack;
-  - [x] riseInFrontFront;
-  - [x] riseInFrontLeft;
-  - [x] riseInFrontRight;
+- 飞入效果
+  - [x] flightInFrontBack;
+  - [x] flightInFrontFront;
+  - [x] flightInFrontLeft;
+  - [x] flightInFrontRight;
 
-- 飘出效果
-  - [x] riseOutFrontBack;
-  - [x] riseOutFrontFront;
-  - [x] riseOutFrontLeft;
-  - [x] riseOutFrontRight;
+- 飞出效果
+  - [x] flightOutFrontBack;
+  - [x] flightOutFrontFront;
+  - [x] flightOutFrontLeft;
+  - [x] flightOutFrontRight;
 
 # 正在开发的效果
 

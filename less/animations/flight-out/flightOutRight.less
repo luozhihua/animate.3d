@@ -1,6 +1,6 @@
-@if ($use-riseOutLeft == true) {
+& when (@use-flightOutRight = true) {
 
-    @keyframes riseOutLeft {
+    @keyframes flightOutRight {
         0% {
             transform: rotate3d(1,0,0,0deg) translateY(0) translateX(0);
         }
@@ -10,13 +10,13 @@
         }
         100% {
             opacity: 0;
-            transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(-900%);
+            transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(900%);
         }
     }
 
-    .riseOutLeft {
+    .flightOutRight {
         transform-origin: top center;
-        animation-name: riseOutLeft;
+        animation-name: flightOutRight;
         animation-timing-function: ease-in-out;
     }
 }

@@ -1,6 +1,6 @@
-@if ($use-riseInFront == true) {
+@if ($use-flightInFront == true) {
 
-    @keyframes riseInFront {
+    @keyframes flightInFront {
 
         0% {
             opacity: 0;
@@ -16,9 +16,9 @@
         }
     }
 
-    .riseInFront {
+    .flightInFront {
         transform-origin: top center;
-        animation-name: riseInFront;
+        animation-name: flightInFront;
         animation-timing-function: ease-in-out;
     }
 }

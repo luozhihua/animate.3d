@@ -1,0 +1,23 @@
+@if ($use-flightInBack == true) {
+
+    @keyframes flightInBack {
+        0% {
+            opacity: 0;
+            transform: rotate3d(1,0,0,45deg) translateY(900%);
+        }
+        50% {
+            opacity: 1;
+            transform: rotate3d(1,0,0,45deg) translateY(-100%);
+        }
+        100% {
+            opacity: 1;
+            transform: rotate3d(1,0,0,0deg) translateY(0);
+        }
+    }
+
+    .flightInBack {
+        transform-origin: top center;
+        animation-name: flightInBack;
+        animation-timing-function: ease-in-out;
+    }
+}

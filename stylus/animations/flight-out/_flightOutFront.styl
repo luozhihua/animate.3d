@@ -1,0 +1,14 @@
+if $use-flightOutFront == true
+  @keyframes
+    0$
+      transform: rotate3d(1, 0, 0, 0deg) translateY(0)
+    50$
+      opacity: 1
+      transform: rotate3d(1, 0, 0, 45deg) translateY(-100%)
+    100$
+      opacity: 0
+      transform: rotate3d(1, 0, 0, 45deg) translateY(-900%)
+  .flightOutFront
+    transform-origin: top center
+    animation-name: flightOutFront
+    animation-timing-function: ease-in-out

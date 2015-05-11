@@ -1,9 +1,10 @@
-@if ($use-riseInBack == true) {
+& when (@use-flightInFront = true) {
 
-    @keyframes riseInBack {
+    @keyframes flightInFront {
+
         0% {
             opacity: 0;
-            transform: rotate3d(1,0,0,45deg) translateY(900%);
+            transform: rotate3d(1,0,0,45deg) translateY(-900%);
         }
         50% {
             opacity: 1;
@@ -15,9 +16,9 @@
         }
     }
 
-    .riseInBack {
+    .flightInFront {
         transform-origin: top center;
-        animation-name: riseInBack;
+        animation-name: flightInFront;
         animation-timing-function: ease-in-out;
     }
 }

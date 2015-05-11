@@ -1,6 +1,6 @@
-@if ($use-riseInRight == true) {
+& when (@use-flightInRight = true) {
 
-    @keyframes riseInRight {
+    @keyframes flightInRight {
         0% {
             opacity: 0;
             transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(900%);
@@ -15,9 +15,9 @@
         }
     }
 
-    .riseInRight {
+    .flightInRight {
         transform-origin: top center;
-        animation-name: riseInRight;
+        animation-name: flightInRight;
         animation-timing-function: ease-in-out;
     }
 }

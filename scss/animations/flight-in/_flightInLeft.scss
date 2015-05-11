@@ -1,6 +1,6 @@
-@if ($use-riseInLeft == true) {
+@if ($use-flightInLeft == true) {
 
-    @keyframes riseInLeft {
+    @keyframes flightInLeft {
         0% {
             opacity: 0;
             transform: rotate3d(1,0,0,45deg) translateY(-100%) translateX(-900%);
@@ -15,9 +15,9 @@
         }
     }
 
-    .riseInLeft {
+    .flightInLeft {
         transform-origin: top center;
-        animation-name: riseInLeft;
+        animation-name: flightInLeft;
         animation-timing-function: ease-in-out;
     }
 }
