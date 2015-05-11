@@ -1,11 +1,17 @@
 if $use-turnInRight == true
   @keyframes
     0$
-      opacity: 0
-      transform: rotateY(-359deg) translateZ(200px) translateX(-400px)
+      transform: rotateY(180deg)
+    40$
+      transform: rotateY(45deg)
+    70$
+      transform: rotateY(-20deg)
+    80$
+      transform: rotateY(10deg)
+    90$
+      transform: rotateY(-5deg)
     100$
-      opacity: 1
-      transform: rotateY(0deg) translateZ(0px) translateX(0px)
+      transform: rotateY(0deg)
   .turnInRight
-    transform-origin: right
+    transform-origin: left
     animation-name: turnInRight

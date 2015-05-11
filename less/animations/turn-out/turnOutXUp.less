@@ -1,10 +1,12 @@
-& when (@use-turnOutDown = true) {
+& when (@use-turnOutXUp = true) {
 
-    @keyframes turnOutDown {
+    @keyframes turnOutXUp {
         0% {
+            opacity: 1;
             transform: rotateX(0deg);
         }
         50% {
+            opacity: 0.5;
             transform: rotateX(90deg);
         }
         100% {
@@ -13,8 +15,7 @@
         }
     }
 
-    .turnOutDown {
-        transform-origin: bottom;
-        animation-name: turnOutDown;
+    .turnOutXUp {
+        animation-name: turnOutXUp;
     }
 }

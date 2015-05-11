@@ -1,13 +1,19 @@
 & when (@use-turnOutRight = true) {
 
     @keyframes turnOutRight {
-        0% {
+         0% {
+            transform: rotateY(0deg);
+        }
+        50% {
+            transform: rotateY(-90deg);
+        }
+        75% {
             opacity: 1;
-            transform: rotateY(0deg) translateZ(0px) translateX(0px);
+            transform: rotateY(-135deg);
         }
         100% {
             opacity: 0;
-            transform: rotateY(-359deg) translateZ(200px) translateX(-400px);
+            transform: rotateY(-180deg);
         }
     }
 

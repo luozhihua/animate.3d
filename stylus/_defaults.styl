@@ -5,15 +5,15 @@
  *   <div class="a3d-box">
  *       <div class="a3d pullIn"></div>
  *   </div> */
-.a3d-box
+.a3d
   -ms-transform-style: preserve-3d
   -o-transform-style: preserve-3d
   perspective: 200px
   perspective-origin: center
 /**
  * enable 3D mode for animations
- * @class .a3d */
-.a3d, .animated
+ * @class .animated */
+.animated
   transform-style: preserve-3d
   transition: transform
   animation-duration: $base-duration
@@ -21,6 +21,6 @@
   animation-iteration-count: 1
   animation-fill-mode: both
   animation-play-state: running
-.a3d, .animated
+.animated
   &.infinite
     animation-iteration-count: infinite

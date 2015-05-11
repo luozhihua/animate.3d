@@ -1,0 +1,22 @@
+& when (@use-turnOut = true) {
+
+    @keyframes turnOut {
+        0% {
+            opacity: 1;
+            transform: rotateY(0deg);
+        }
+        50% {
+            opacity: 0.5;
+            transform: rotateY(90deg) scale(0.7);
+        }
+        100% {
+            opacity: 0;
+            transform: rotateY(180deg) scale(1);
+        }
+    }
+
+    .turnOut {
+        transform-origin: center;
+        animation-name: turnOut;
+    }
+}

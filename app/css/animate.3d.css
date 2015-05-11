@@ -6,7 +6,7 @@
  *       <div class="a3d pullIn"></div>
  *   </div>
  */
-.a3d-box {
+.a3d {
   -ms-transform-style: preserve-3d;
   -o-transform-style: preserve-3d;
   -webkit-perspective: 200px;
@@ -16,9 +16,9 @@
 
 /**
  * enable 3D mode for animations
- * @class .a3d
+ * @class .animated
  */
-.a3d, .animated {
+.animated {
   -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d;
   -webkit-transition: -webkit-transform;
@@ -34,7 +34,7 @@
   -webkit-animation-play-state: running;
           animation-play-state: running; }
 
-.a3d.infinite, .animated.infinite {
+.animated.infinite {
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite; }
 

@@ -1,12 +1,13 @@
-if $use-turnOutDown == true
+if $use-turnOutXUp == true
   @keyframes
     0$
+      opacity: 1
       transform: rotateX(0deg)
     50$
+      opacity: 0.5
       transform: rotateX(90deg)
     100$
       opacity: 0
       transform: rotateX(180deg)
-  .turnOutDown
-    transform-origin: bottom
-    animation-name: turnOutDown
+  .turnOutXUp
+    animation-name: turnOutXUp
